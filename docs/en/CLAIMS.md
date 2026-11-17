@@ -56,12 +56,22 @@ capability requires real-corpus validation (project discipline).
 → On a small clean single-hop fact set, **text is as good or slightly better than native injection**; native is
 competitive but does not beat text here. Native's edge is selectivity/writability/context-efficiency, not this scenario.
 
-**Mem-PAL reasoning-bound (0.8B, natural, partial 8/16):** N 0.335 / P 0.455 / H 0.305 / RAG 0.425 / SUM 0.334 —
-native H trails RAG/P. **Diagnosis (W113 micro-tests):** recall is fine; the bottleneck is K/V injection cannot do
-open-ended synthesis (form, not capacity). **Brain-inspired two-stage fix** (per-fact injection readout → facts as
-text → reason) validated on a single 4B question: complete readout avoids neg and matches the text baseline.
-**Projected** to lift H toward the text band (~0.42–0.46) on full Mem-PAL — *inference from n=1, pending full validation,
-not a measured score.* Evidence: `results/mempal/`.
+**Mem-PAL reasoning-bound (natural, 16 questions, 6 users, GPU; measured):**
+
+| arm | 0.8B | 4B |
+|---|---|---|
+| N no memory | 0.421 | 0.451 |
+| P all text | 0.462 | 0.469 |
+| RAG retrieved text | **0.506** | 0.438 |
+| H native single-shot | 0.372 | **0.480** |
+| H two-stage readout→reason | 0.393 | 0.448 |
+
+**Honest reading:** at 4B **no memory arm significantly beats no-memory** (best +0.029, s.e. 0.053) — this
+16-question split is weakly discriminative (N alone 0.45). The two-stage fix, validated on a single question,
+**does not beat text at either size** — that n=1 projection is **refuted by measurement**. Only directional:
+native injection improves with capacity (+0.107) while text RAG degrades (−0.068), consistent with
+"memory benefit = task type × base capacity" but **not yet significant**.
+Evidence: `results/mempal/`.
 
 Limits: MAB sh_6k single-hop; n=40/25/15; substring_exact_match; conflict set is 70% conflict groups.
 Selectivity-regime advantage (催收 H>P) is **template-era preliminary**, pending natural-era re-validation.

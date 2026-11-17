@@ -80,9 +80,28 @@ store consolidated facts → **per-fact K/V-injection readout** (injection's str
 - **Per-fact injection readout captures ALL facts incl. the constraint → reasoning AVOIDS neg and matches the
   pure-text baseline (near-identical output).**
 
-**Projected final score — *inference from n=1, NOT a measured benchmark*:** because two-stage complete-readout
-reaches text-parity on the probe question, it is expected to lift H from 0.305 toward the text band
-(RAG/P ≈ 0.42–0.46) on full Mem-PAL. **A hypothesis pending full 16-query × multi-user validation, not a result.**
+**Full measured run (16 questions, 6 users, GPU; natural era; JEV judge):**
+
+| arm | 0.8B | 4B | Δ (4B−0.8B) |
+|---|---|---|---|
+| N no memory | 0.421 | 0.451 | +0.029 |
+| P all-facts text | 0.462 | 0.469 | +0.008 |
+| RAG retrieved text | **0.506** | 0.438 | −0.068 |
+| H native, single-shot | 0.372 | **0.480** | **+0.107** |
+| H two-stage (this section) | 0.393 | 0.448 | +0.054 |
+
+**Honest reading — the single-question advantage did NOT generalize:**
+1. At 4B **no memory arm significantly beats no-memory** (best: H +0.029, s.e. 0.053). The task is
+   **weakly discriminative**: N alone scores 0.45 because vague queries + a JEV judge reward generic advice,
+   leaving ~0.05 headroom that n=16 cannot resolve.
+2. The two-stage readout **does not beat text** at either size (at 0.8B it is clearly behind RAG, −0.112).
+   The n=1 micro-result was a **mechanism probe, not a score** — the earlier projection is hereby **refuted**
+   by measurement.
+3. Only a *directional*, not significant, signal: native injection improves with capacity (H +0.107) while
+   text RAG degrades (−0.068) — consistent with "memory benefit = task type × base capacity", pending a
+   more discriminative task and larger n.
+
+Evidence: `results/mempal/mempal_combo_full4b_18q_judged.json`, `...full08b_16q_judged.json`.
 
 ## 4. Selectivity-regime advantage — *template-era preliminary, pending natural-era re-validation*
 Collection/催收 over-context history (W96/W97, **template era**): 27B combined H 0.535 > P 0.370 > N 0.361,
