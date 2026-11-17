@@ -1,0 +1,20 @@
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   4%|▍         | 17/426 [00:00<00:04, 86.90it/s]Loading weights:   7%|▋         | 31/426 [00:00<00:04, 80.98it/s]Loading weights:  13%|█▎        | 57/426 [00:00<00:02, 130.35it/s]Loading weights:  17%|█▋        | 73/426 [00:00<00:02, 138.60it/s]Loading weights:  21%|██        | 89/426 [00:00<00:02, 121.65it/s]Loading weights:  27%|██▋       | 113/426 [00:00<00:02, 152.52it/s]Loading weights:  31%|███       | 130/426 [00:00<00:02, 144.11it/s]Loading weights:  34%|███▍      | 146/426 [00:01<00:02, 132.27it/s]Loading weights:  39%|███▉      | 166/426 [00:01<00:01, 146.48it/s]Loading weights:  43%|████▎     | 182/426 [00:01<00:01, 134.07it/s]Loading weights:  46%|████▌     | 197/426 [00:01<00:01, 126.18it/s]Loading weights:  50%|█████     | 214/426 [00:01<00:01, 127.81it/s]Loading weights:  56%|█████▌    | 237/426 [00:01<00:01, 148.24it/s]Loading weights:  59%|█████▉    | 253/426 [00:01<00:01, 135.01it/s]Loading weights:  64%|██████▍   | 274/426 [00:02<00:01, 141.12it/s]Loading weights:  69%|██████▉   | 296/426 [00:02<00:01, 127.05it/s]Loading weights:  73%|███████▎  | 310/426 [00:02<00:00, 127.39it/s]Loading weights:  79%|███████▊  | 335/426 [00:02<00:00, 152.87it/s]Loading weights:  83%|████████▎ | 352/426 [00:02<00:00, 145.97it/s]Loading weights:  88%|████████▊ | 376/426 [00:02<00:00, 159.48it/s]Loading weights:  92%|█████████▏| 393/426 [00:02<00:00, 149.67it/s]Loading weights:  96%|█████████▌| 409/426 [00:03<00:00, 136.73it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 138.57it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+════════ 4B ════════
+Q: 有没有什么办法可以让我更高效地完成每天的工作？
+pos: 每天早晨花10分钟规划当天的核心事项，并为每项任务分配具体时间段。 / 利用时间管理工具（如Notion或Todoist）创建动态任务清单并设置提醒。
+neg: 尝试使用番茄工作法，将任务分解为25分钟专注+5分钟休息的循环，以提高效率。 / 每周复盘一次自己的工作效率，找出问题点并调整下周计划。
+
+【KV注入】
+利用高效、简便的方式完成任务，不喜欢额外增加复盘分析负担。希望用高效、简便的方式完成工作，不喜欢额外增加复盘分析负担。
+
+【TEXT文本】
+采用“番茄工作法”的变体，设定 25 分钟专注 +5 分钟休息的循环，利用碎片时间处理杂务。
+每天早晨只列出当天最关键的三件事，优先完成它们以快速获得成就感并留出陪伴家人的时间。
+使用手机日历或待办清单 APP 自动提醒任务节点，避免复杂复盘，确保出差期间也能保持高效节奏。
+
+【NONE不给】
+尝试将任务按紧急和重要程度分类，优先处理高价值工作。利用番茄工作法专注 25 分钟，期间屏蔽所有干扰源。每天睡前花 10 分钟复盘当日进度并规划明日重点。

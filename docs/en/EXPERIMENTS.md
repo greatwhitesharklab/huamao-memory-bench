@@ -55,12 +55,34 @@ better** than native injection. Native injection is competitive (0.933) but does
 Native's advantages are **selectivity** (long/noisy/over-context history), **writability/overwrite**, and
 **not consuming prompt tokens** — these need the right scenario to show, not a small clean fact set.
 
-## 3. Reasoning-bound preference recommendation (Mem-PAL, natural era, partial)
-Mem-PAL = recall a user's long-term preferences from ~30 sessions, recommend for a vague query (reasoning-bound).
-Natural-era baseline (0.8B, 8/16 queries, current recall): **N 0.335 / P 0.455 / H 0.305 / RAG 0.425 / SUM 0.334**.
-**Native H still trails RAG/P** on this reasoning-bound task. (Full 16-query natural-era run + a semantic-recall
-variant were started and paused; see W113 — semantic recall helped a tiny smoke test but *not* the first real
-query, so it is **not** a validated fix.)
+## 3. Reasoning-bound preference recommendation (Mem-PAL) — diagnosis + a brain-inspired fix
+Mem-PAL = recall a user's long-term preferences (**accept/reject attitudes, often with negation**) from ~30
+sessions, then recommend for a vague query.
+
+**Baseline (0.8B, natural era, 8/16 queries):** N 0.335 / P 0.455 / **H 0.305** / RAG 0.425 / SUM 0.334.
+Native H trails RAG/P.
+
+**Diagnosis (controlled micro-tests, W113):**
+- Recall is **not** the bottleneck — semantic recall retrieves relevant prefs, not rejected ones.
+- The bottleneck: **K/V injection cannot do open-ended synthesis.** With *identical* pref content, injection
+  yields garbage (0.8B) / fixation-echo (4B), while the same content as **text** synthesizes coherently.
+  It is the injection **form**, not capacity (4B does not fix it).
+- **Architectural boundary: B-KV injection = fact-memory engine (write / recall / overwrite / constrained
+  readout), NOT an open-synthesis engine.**
+
+**Brain-inspired fix — separate memory-readout from reasoning (two-stage):**
+store consolidated facts → **per-fact K/V-injection readout** (injection's strength) → read-out facts as
+**text** → reason/recommend (text's strength). Memory recall ≠ reasoning, as in the brain.
+
+**Single-question proof-of-concept (4B, n=1, 3 prefs):**
+- All-at-once injection readout fixates on 1 pref, misses the "irregular schedule / no fixed-focus" constraint
+  → recommendation hits a **neg** (Pomodoro).
+- **Per-fact injection readout captures ALL facts incl. the constraint → reasoning AVOIDS neg and matches the
+  pure-text baseline (near-identical output).**
+
+**Projected final score — *inference from n=1, NOT a measured benchmark*:** because two-stage complete-readout
+reaches text-parity on the probe question, it is expected to lift H from 0.305 toward the text band
+(RAG/P ≈ 0.42–0.46) on full Mem-PAL. **A hypothesis pending full 16-query × multi-user validation, not a result.**
 
 ## 4. Selectivity-regime advantage — *template-era preliminary, pending natural-era re-validation*
 Collection/催收 over-context history (W96/W97, **template era**): 27B combined H 0.535 > P 0.370 > N 0.361,

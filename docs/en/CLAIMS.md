@@ -57,7 +57,11 @@ capability requires real-corpus validation (project discipline).
 competitive but does not beat text here. Native's edge is selectivity/writability/context-efficiency, not this scenario.
 
 **Mem-PAL reasoning-bound (0.8B, natural, partial 8/16):** N 0.335 / P 0.455 / H 0.305 / RAG 0.425 / SUM 0.334 —
-native H trails RAG/P. (Semantic-recall variant helped a tiny smoke test but not the first real query; not a validated fix.)
+native H trails RAG/P. **Diagnosis (W113 micro-tests):** recall is fine; the bottleneck is K/V injection cannot do
+open-ended synthesis (form, not capacity). **Brain-inspired two-stage fix** (per-fact injection readout → facts as
+text → reason) validated on a single 4B question: complete readout avoids neg and matches the text baseline.
+**Projected** to lift H toward the text band (~0.42–0.46) on full Mem-PAL — *inference from n=1, pending full validation,
+not a measured score.* Evidence: `results/mempal/`.
 
 Limits: MAB sh_6k single-hop; n=40/25/15; substring_exact_match; conflict set is 70% conflict groups.
 Selectivity-regime advantage (催收 H>P) is **template-era preliminary**, pending natural-era re-validation.

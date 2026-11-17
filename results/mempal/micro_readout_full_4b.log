@@ -1,0 +1,26 @@
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 23338.21it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+════════ 4B 读出完整性 ════════
+Q: 有没有什么办法可以让我更高效地完成每天的工作？
+neg(须避开): 尝试使用番茄工作法，将任务分解为25分钟专注+5分钟休息的循环，以提高效率。 / 每周复盘一次自己的工作效率，找出问题点并调整下周计划。
+
+【策略1 读出(一次注入3条,列出所有)】
+希望用高效、简便的方式完成任务，不喜欢额外增加复盘分析负担。
+
+【策略1 B2 推理】
+采用“番茄工作法”将任务拆解为 25 分钟专注块，期间只处理单一事项。利用手机或电脑自带的待办清单应用直接勾选完成项，无需额外记录复盘。
+
+【策略2 读出(逐条注入汇总)】
+1. 希望用高效、简便的方式完成任务，不喜欢额外增加复盘分析负担。
+2. 经常出差，因此不太适合需要严格规律执行的时间管理方法。
+经常出差，因此不太适合需要严格规律执行的时间管理方法。
+3. 希望提高工作效率，以腾出更多时间陪伴家人和照顾自己。
+
+【策略2 B2 推理】
+采用“任务批处理”法，将同类工作集中时段完成，减少切换成本。利用碎片时间处理紧急事务，核心深度工作留到精力最充沛时进行。这样既能快速推进进度，又无需额外复盘，让你有更多时间陪伴家人和照顾自己。
+
+【C 纯文本基线】
+采用“任务批处理”法，将同类工作集中时段完成，减少切换成本。利用碎片时间处理紧急琐事，把大块精力留给核心任务。这样既能快速推进工作，又能腾出整块时间陪伴家人和照顾自己。
