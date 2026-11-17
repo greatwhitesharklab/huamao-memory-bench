@@ -33,11 +33,13 @@ python benchmarks/mab/run.py --model ./models/Qwen3.5-0.8B --adapter /path/adapt
 Ablations: `--no-overwrite` (append-only), `--template` (legacy Chinese-template encoding).
 
 ## Adapter & weights (license)
-- **Base Qwen weights are not redistributed** — download them under their own license.
-- The **shared adapter** is a small trained read/write interface. Whether it can be redistributed is
-  subject to the Qwen license review (M7 #2, pending). Until then, bring your own adapter or train one
-  (training recipe to be added). The mechanism runs with a zero adapter (`--adapter` omitted) but
-  injection utilization drops sharply — the adapter is what makes the model *read* the injected K/V.
+- **Base Qwen weights are not redistributed** — download them under their own license (Qwen3.5 is Apache-2.0).
+- The **shared adapter** (~524k params) is the read interface that makes the model *use* injected K/V
+  (without it, utilization drops ~95%→~17.5%). **We ship the principle + training recipe, not trained
+  weights** — see [`docs/ADAPTER.md`](docs/ADAPTER.md) to train your own on your base/domain. The mechanism
+  runs with a zero adapter (`--adapter` omitted) but injection utilization drops sharply.
+- License checked: base Qwen3.5 (0.8B/4B) is **Apache-2.0** (no restrictive Qwen clauses), which permits
+  derivative-adapter redistribution; we ship principle-only by decision, not because of a license blocker.
 
 ## How it works (one paragraph)
 Write a fact → encode its value span into per-layer K/V rows (frozen forward) → store rows + a retrieval

@@ -24,5 +24,6 @@ Date: 2026-11-17. Scope: `huamao_bkv/`, `benchmarks/`, `scripts/`, `tests/`, roo
   moved to NFS backup, not released.
 
 ## Residual / pending
-- Adapter redistribution license review (Qwen) — M7 #2, pending. Adapter is not committed meanwhile.
+- Adapter license: **resolved** — base Qwen3.5 (0.8B/4B) is Apache-2.0 (permits derivative redistribution).
+  Trained adapter weights are **not shipped** by decision; principle + recipe in `docs/ADAPTER.md`.
 - Re-run this audit before any public push / after adding new files.
