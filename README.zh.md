@@ -33,8 +33,7 @@ decode 收敛出答案。
 ## 快速上手（0.8B CPU）
 依赖用 [uv](https://docs.astral.sh/uv/) 管理（每项目一个独立环境）。
 ```bash
-uv venv                          # 项目专属环境
-uv pip install -e ".[bench]"     # 核心＋基准依赖（torch/transformers/pandas/pyarrow/huggingface_hub）
+uv sync --extra bench            # 项目专属环境＋核心&基准依赖（torch/transformers/pandas/pyarrow/huggingface_hub）
 
 # 1) 底座权重不随仓附带——自行下载 Qwen3.5-0.8B（ModelScope 或 HF），例如
 #    modelscope download Qwen/Qwen3.5-0.8B --local_dir ./models/Qwen3.5-0.8B

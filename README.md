@@ -38,8 +38,7 @@ capacity limit memory cannot buy. See [`CLAIMS.md`](CLAIMS.md).
 ## Quickstart (0.8B CPU)
 Dependencies are managed with [uv](https://docs.astral.sh/uv/) (one project-local env).
 ```bash
-uv venv                          # project-local environment
-uv pip install -e ".[bench]"     # core + benchmark deps (torch/transformers/pandas/pyarrow/huggingface_hub)
+uv sync --extra bench            # project-local env + core & benchmark deps (torch/transformers/pandas/pyarrow/huggingface_hub)
 
 # 1) base weights are NOT bundled — download Qwen3.5-0.8B yourself (ModelScope or HF), e.g.
 #    modelscope download Qwen/Qwen3.5-0.8B --local_dir ./models/Qwen3.5-0.8B
