@@ -1,0 +1,322 @@
+{
+ "n": 15,
+ "rag_topk": 3,
+ "N": {
+  "acc": 0.2,
+  "hits": 3
+ },
+ "H": {
+  "acc": 0.933,
+  "hits": 14
+ },
+ "RAG": {
+  "acc": 1.0,
+  "hits": 15
+ },
+ "P": {
+  "acc": 1.0,
+  "hits": 15
+ },
+ "detail": [
+  {
+   "q": "What is Ferdowsi famous for?",
+   "a": "Shahnameh",
+   "N": {
+    "hit": false,
+    "gen": "Ferdowsi (the poet) is famous for his **Persian epic poem *The Name"
+   },
+   "H": {
+    "hit": true,
+    "gen": "**Shahnameh**: A Shahnamhep (Sanskhi) named \"Shname"
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "Ferdowsi is famous for Shahnameh."
+   },
+   "P": {
+    "hit": true,
+    "gen": "Ferdowsi is famous for Shahnameh."
+   }
+  },
+  {
+   "q": "Which university was Joan Didion educated at?",
+   "a": "University of California, Berkeley",
+   "N": {
+    "hit": false,
+    "gen": "Joan Didion was educated at **Harvard University** (where she earned her B.A."
+   },
+   "H": {
+    "hit": true,
+    "gen": "University of California, Berkeley.\n\n**Answer:**\nUniversity of California, Berkeley (Berkeley)"
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "University of California, Berkeley"
+   },
+   "P": {
+    "hit": true,
+    "gen": "University of California, Berkeley"
+   }
+  },
+  {
+   "q": "What is the name of the current head of the Tucson government?",
+   "a": "Jonathan Rothschild",
+   "N": {
+    "hit": false,
+    "gen": "The current head of the Tucson government is Mayor **Jorge L. Guevara**. He has"
+   },
+   "H": {
+    "hit": false,
+    "gen": "Bill Peduto: Bill Peduto, a member of the House and Senate, is a politician with"
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "Jonathan Rothschild"
+   },
+   "P": {
+    "hit": true,
+    "gen": "Jonathan Rothschild"
+   }
+  },
+  {
+   "q": "What is the name of the current head of the Italy government?",
+   "a": "Giuseppe Conte",
+   "N": {
+    "hit": false,
+    "gen": "The current head of the Italian government is **Giorgia Meloni**. She has been serving as Prime"
+   },
+   "H": {
+    "hit": true,
+    "gen": "Giuseppe Conte\n\nGiuseppe Conte is the head of the government Giuseppe Conte, Giuseppe Conte - Giusep"
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "Giuseppe Conte"
+   },
+   "P": {
+    "hit": true,
+    "gen": "Giuseppe Conte"
+   }
+  },
+  {
+   "q": "Who performed Meredith Grey?",
+   "a": "Ellen Pompeo",
+   "N": {
+    "hit": false,
+    "gen": "Meredith Grey was a British singer-songwriter and actress who performed in the 196"
+   },
+   "H": {
+    "hit": true,
+    "gen": "Ell Pompeo: Ellen Pompeo, the actress.\n\nIn this role, she is a character in the"
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "Ellen Pompeo"
+   },
+   "P": {
+    "hit": true,
+    "gen": "Ellen Pompeo"
+   }
+  },
+  {
+   "q": "Who is the developer of Windows Phone?",
+   "a": "Microsoft",
+   "N": {
+    "hit": true,
+    "gen": "The developer of Windows Phone is **Microsoft**."
+   },
+   "H": {
+    "hit": true,
+    "gen": "Microsoft\n\nMicrosoft\n- Microsoft\n- Microsoft\n- Microsoft\n- Microsoft\n- Microsoft\n-"
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "Microsoft"
+   },
+   "P": {
+    "hit": true,
+    "gen": "Microsoft"
+   }
+  },
+  {
+   "q": "Who founded Church of Scotland?",
+   "a": "John Knox",
+   "N": {
+    "hit": false,
+    "gen": "The Church of Scotland was founded in 1549 by **James I of England** ("
+   },
+   "H": {
+    "hit": true,
+    "gen": "John Knox and John Knox, 1st Baron Knox.\n\nHe was a Scottish Presbyterian and the"
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "John Knox"
+   },
+   "P": {
+    "hit": true,
+    "gen": "John Knox"
+   }
+  },
+  {
+   "q": "Which sport is Galwegians RFC associated with?",
+   "a": "rugby union",
+   "N": {
+    "hit": true,
+    "gen": "Galwegians RFC is associated with **rugby union**."
+   },
+   "H": {
+    "hit": true,
+    "gen": "**Rug Union Union**\n\nSport: Rugby Union\nLocation: South Africa (specifically the"
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "rugby union"
+   },
+   "P": {
+    "hit": true,
+    "gen": "rugby union"
+   }
+  },
+  {
+   "q": "What is the country of citizenship of Benjamin Mazar?",
+   "a": "Israel",
+   "N": {
+    "hit": false,
+    "gen": "Benjamin Mazar is a French politician and former Prime Minister of France."
+   },
+   "H": {
+    "hit": true,
+    "gen": "Israel: Israel and Israel.\n\n**Note:** This is a slight error in the name (likely"
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "Israel"
+   },
+   "P": {
+    "hit": true,
+    "gen": "Israel"
+   }
+  },
+  {
+   "q": "Which city is the headquarter of The University of the Arts located in?",
+   "a": "Philadelphia",
+   "N": {
+    "hit": false,
+    "gen": "The University of the Arts (UA) is headquartered in **London, England**."
+   },
+   "H": {
+    "hit": true,
+    "gen": "Philadelphia, Philadelphia City College.\n\n**Answer:**\nThe city and city of Philadelphia."
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "Philadelphia"
+   },
+   "P": {
+    "hit": true,
+    "gen": "Philadelphia"
+   }
+  },
+  {
+   "q": "Who performed Free as a Bird?",
+   "a": "The Beatles",
+   "N": {
+    "hit": false,
+    "gen": "The song \"Free as a Bird\" was performed by **John Lennon**. It is one of his"
+   },
+   "H": {
+    "hit": true,
+    "gen": "The Beatles – The Beatles and The Beatles\n\n**14th November, 23:3"
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "The Beatles."
+   },
+   "P": {
+    "hit": true,
+    "gen": "The Beatles."
+   }
+  },
+  {
+   "q": "What is the country of citizenship of Hal Needham?",
+   "a": "United States of America",
+   "N": {
+    "hit": false,
+    "gen": "Hal Needham is a Canadian politician. He was born in Toronto, Ontario, and holds citizenship of"
+   },
+   "H": {
+    "hit": true,
+    "gen": "United States of America, USA of America.\n\n**United States of America, United States of America"
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "United States of America"
+   },
+   "P": {
+    "hit": true,
+    "gen": "United States of America"
+   }
+  },
+  {
+   "q": "Which sport is Darryl Strawberry associated with?",
+   "a": "baseball",
+   "N": {
+    "hit": false,
+    "gen": "Darryl Strawberry is associated with **basketball**. He was a prominent player in the NBA,"
+   },
+   "H": {
+    "hit": true,
+    "gen": "Baseball.\n\nDarryl Baseball is a baseball team based in the United States, and they"
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "Baseball"
+   },
+   "P": {
+    "hit": true,
+    "gen": "baseball"
+   }
+  },
+  {
+   "q": "Which continent is San Francisco located in?",
+   "a": "North America",
+   "N": {
+    "hit": false,
+    "gen": "United States."
+   },
+   "H": {
+    "hit": true,
+    "gen": "North America.\n\n**North America**\n- **Continent**: North America\n- **Region"
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "North America"
+   },
+   "P": {
+    "hit": true,
+    "gen": "North America"
+   }
+  },
+  {
+   "q": "What is the country of citizenship of Ayumi Hamasaki?",
+   "a": "Japan",
+   "N": {
+    "hit": true,
+    "gen": "Ayumi Hamasaki is a Japanese singer."
+   },
+   "H": {
+    "hit": true,
+    "gen": "Japan.\n\n**Japan and Japan, Japan**\n*   **Nationality:** Japanese\n*"
+   },
+   "RAG": {
+    "hit": true,
+    "gen": "Japan"
+   },
+   "P": {
+    "hit": true,
+    "gen": "Japan"
+   }
+  }
+ ]
+}

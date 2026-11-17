@@ -1,0 +1,1327 @@
+{
+ "n": 40,
+ "ks": [
+  1,
+  2,
+  3
+ ],
+ "sh6k": "sh6k.json",
+ "ret_layer": 15,
+ "ret_head": 2,
+ "off": {
+  "rows_active": 455,
+  "superseded": 0,
+  "k1": {
+   "acc": 0.35,
+   "hits": 14
+  },
+  "k2": {
+   "acc": 0.325,
+   "hits": 13
+  },
+  "k3": {
+   "acc": 0.3,
+   "hits": 12
+  },
+  "detail": [
+   {
+    "q": "Which sport is goaltender associated with?",
+    "a": "pesäpallo",
+    "k1": {
+     "hit": false,
+     "gen": "The sport of association football (soccer) does not have a position called \"goaltender.\""
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The sport of ice hockey."
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The sport of ice hockey."
+    }
+   },
+   {
+    "q": "What is Nobuhiro Watsuki famous for?",
+    "a": "The Fairly OddParents",
+    "k1": {
+     "hit": false,
+     "gen": "Nobuhiro Watsuki is famous for creating the manga and anime series **Ruroun"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Nobuhiro Watsuki is famous for being the **author** of *Ruroun"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Nobuhiro Watsuki is famous for being the **author** of *Ruroun"
+    }
+   },
+   {
+    "q": "Which country was rugby union created in?",
+    "a": "India",
+    "k1": {
+     "hit": false,
+     "gen": "Rugby union was created in **England**.\n\nThe sport originated at Rugby School in **Le"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The sport of rugby union was created in the **country of England** (specifically at Rugby School"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The sport of rugby union was created in the **country of England** (specifically, it originated"
+    }
+   },
+   {
+    "q": "What is Ferdowsi famous for?",
+    "a": "Shahnameh",
+    "k1": {
+     "hit": true,
+     "gen": "Ferdowsi is famous for authoring the **Shahnameh** (The Book of"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Ferdowsi is famous for being the author of the **Shahnameh** (The"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Ferdowsi is famous for being the author of the **Shahnameh** (The"
+    }
+   },
+   {
+    "q": "Which university was Joan Didion educated at?",
+    "a": "University of California, Berkeley",
+    "k1": {
+     "hit": true,
+     "gen": "University of California, Berkeley"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "University of California, Berkeley"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "University of California, Berkeley"
+    }
+   },
+   {
+    "q": "Who is the author of The Marriage of Figaro?",
+    "a": "Thomas Kyd",
+    "k1": {
+     "hit": false,
+     "gen": "Pierre Beaumarchais"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Pierre Beaumarchais"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Pierre Beaumarchais"
+    }
+   },
+   {
+    "q": "Which sport is Tunisia national football team associated with?",
+    "a": "basketball",
+    "k1": {
+     "hit": false,
+     "gen": "The sport of association football (soccer)."
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The sport of association football (soccer)."
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The sport of association football (soccer)."
+    }
+   },
+   {
+    "q": "Which sport is quarterback associated with?",
+    "a": "Muay Thai",
+    "k1": {
+     "hit": true,
+     "gen": "The sport of Muay Thai."
+    },
+    "k2": {
+     "hit": false,
+     "gen": "American football"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "American football"
+    }
+   },
+   {
+    "q": "What is the official language of Japan?",
+    "a": "Swedish",
+    "k1": {
+     "hit": false,
+     "gen": "The official language of Japan is **Japanese**."
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The official language of Japan is **Japanese**."
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The official language of Japan is the country of Japan."
+    }
+   },
+   {
+    "q": "What is the name of the current head of the Tucson government?",
+    "a": "Jonathan Rothschild",
+    "k1": {
+     "hit": false,
+     "gen": "Jonathan Rothchild"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Bill Peduto"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Bill Peduto"
+    }
+   },
+   {
+    "q": "What is the name of the current head of the Italy government?",
+    "a": "Giuseppe Conte",
+    "k1": {
+     "hit": false,
+     "gen": "The current head of the Italian government is Prime Minister **Giorgia Meloni**. She assumed office "
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Giuseppe Conte"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Giuseppe Conte"
+    }
+   },
+   {
+    "q": "Who performed Meredith Grey?",
+    "a": "Ellen Pompeo",
+    "k1": {
+     "hit": true,
+     "gen": "Ellen Pompeo"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Ellen Pompeo"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Ellen Pompeo performed Meredith Grey."
+    }
+   },
+   {
+    "q": "What position does Robert Parish play?",
+    "a": "quarterback",
+    "k1": {
+     "hit": false,
+     "gen": "Robert Parish played the **center** position."
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Robert Parish played **center** (C) in the NBA. He was a two-time All-Star"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Center"
+    }
+   },
+   {
+    "q": "What is the country of citizenship of Cédric Klapisch?",
+    "a": "Malaysia",
+    "k1": {
+     "hit": false,
+     "gen": "France"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "France"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "France"
+    }
+   },
+   {
+    "q": "Who is the author of Sidereus Nuncius?",
+    "a": "Samuel Beckett",
+    "k1": {
+     "hit": true,
+     "gen": "Samuel Beckett"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Galileo Galilei"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Galileo Galilei"
+    }
+   },
+   {
+    "q": "Which continent is Germany located in?",
+    "a": "Africa",
+    "k1": {
+     "hit": false,
+     "gen": "Europe"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Europe"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Europe"
+    }
+   },
+   {
+    "q": "Which religion is Kingdom of Ireland affiliated with?",
+    "a": "Zoroastrianism",
+    "k1": {
+     "hit": false,
+     "gen": "The Tang Empire is affiliated with Buddhism."
+    },
+    "k2": {
+     "hit": true,
+     "gen": "The religion of Zoroastrianism."
+    },
+    "k3": {
+     "hit": true,
+     "gen": "The religion of the Zoroastrianism."
+    }
+   },
+   {
+    "q": "Which country was association football created in?",
+    "a": "Italy",
+    "k1": {
+     "hit": false,
+     "gen": "The sport of association football (soccer) was created in **England**.\n\nWhile the game's"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The sport of association football (soccer) was created in **England**.\n\nWhile the specific rules"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The sport of association football (soccer) was created in **England**.\n\nWhile the game's"
+    }
+   },
+   {
+    "q": "Who is the developer of Windows Phone?",
+    "a": "Microsoft",
+    "k1": {
+     "hit": true,
+     "gen": "Microsoft"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Microsoft"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Microsoft"
+    }
+   },
+   {
+    "q": "Who is the chief executive officer of Microsoft?",
+    "a": "Steve Jobs",
+    "k1": {
+     "hit": false,
+     "gen": "Satya Nadella"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Satya Nadella"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Satya Nadella"
+    }
+   },
+   {
+    "q": "Who is the chairperson of Harvard University?",
+    "a": "Peter Diamandis",
+    "k1": {
+     "hit": true,
+     "gen": "Peter Diamandis is the chairperson of Harvard University."
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Peter Diamandis is the chairperson of Harvard University. He serves as the president of the Law"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Peter Diamandis is the chairperson of the law school at Harvard University, located in the city"
+    }
+   },
+   {
+    "q": "Who founded Church of Scotland?",
+    "a": "John Knox",
+    "k1": {
+     "hit": true,
+     "gen": "John Knox founded the Church of Scotland."
+    },
+    "k2": {
+     "hit": true,
+     "gen": "The Church of Scotland was founded by **John Knox** (or John Knew).\n\nWhile the"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "The Church of Scotland is the national church of Scotland, and its religious history traces back to "
+    }
+   },
+   {
+    "q": "Which sport is Galwegians RFC associated with?",
+    "a": "rugby union",
+    "k1": {
+     "hit": true,
+     "gen": "rugby union"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "rugby union"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "rugby union"
+    }
+   },
+   {
+    "q": "Who is the director of American Broadcasting Company?",
+    "a": "Ernst Heinkel",
+    "k1": {
+     "hit": false,
+     "gen": "The director of the American Broadcasting Company (ABC) is **Eric Weitz**.\n\n*Note:"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Bob Iger"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Bob Iger"
+    }
+   },
+   {
+    "q": "Which city did Gennady Rozhdestvensky die in?",
+    "a": "United States of America",
+    "k1": {
+     "hit": false,
+     "gen": "The city of Moscow"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The city of Moscow"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The city of Moscow"
+    }
+   },
+   {
+    "q": "What is the capital of Tang Empire?",
+    "a": "Beaumont",
+    "k1": {
+     "hit": false,
+     "gen": "Tang Empire's capital was **Chang'an** (also known as Chang'an City). It"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Beaumont"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Chang'an"
+    }
+   },
+   {
+    "q": "Who is the director of British Broadcasting Corporation?",
+    "a": "Narendra Modi",
+    "k1": {
+     "hit": false,
+     "gen": "Tony Hall, Baron Hall of Birkenhead"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Tony Hall of Birkenhead"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The British Broadcasting Corporation (BBC) is a public service broadcaster, not a corporation in the"
+    }
+   },
+   {
+    "q": "What is the country of citizenship of Benjamin Mazar?",
+    "a": "Israel",
+    "k1": {
+     "hit": true,
+     "gen": "Israel"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "United States of America"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "United States of America"
+    }
+   },
+   {
+    "q": "What type of music does Michael Mantler play?",
+    "a": "post-punk",
+    "k1": {
+     "hit": false,
+     "gen": "Michael Mantler plays **jazz**. He is a renowned jazz pianist, composer, and educator"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Michael Mantler is a post-punk musician. He was the guitarist for the band **post-p"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "post-punk"
+    }
+   },
+   {
+    "q": "Which city did Oscar Wilde die in?",
+    "a": "Guangzhou",
+    "k1": {
+     "hit": false,
+     "gen": "Paris"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The city of Paris"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The city of Paris"
+    }
+   },
+   {
+    "q": "Which country was baseball created in?",
+    "a": "Japan",
+    "k1": {
+     "hit": false,
+     "gen": "The sport of baseball was created in the **United States**.\n\nWhile its origins trace back to a"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The sport of baseball was created in the **United States**."
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The sport of baseball was created in the **United States of America**."
+    }
+   },
+   {
+    "q": "What is the country of citizenship of Ernst Heinkel?",
+    "a": "Tang Empire",
+    "k1": {
+     "hit": true,
+     "gen": "Tang Empire"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Germany"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Germany"
+    }
+   },
+   {
+    "q": "Which city is the headquarter of The University of the Arts located in?",
+    "a": "Philadelphia",
+    "k1": {
+     "hit": true,
+     "gen": "The city of Philadelphia"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "The city of Philadelphia"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Philadelphia"
+    }
+   },
+   {
+    "q": "Which country was rap rock created in?",
+    "a": "Russian Empire",
+    "k1": {
+     "hit": false,
+     "gen": "The country of the United States of America"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The country of Russia Empire"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Rap rock is a genre that originated in the **United States of America**.\n\nWhile it emerged from"
+    }
+   },
+   {
+    "q": "Where was Christianity founded?",
+    "a": "Taipei",
+    "k1": {
+     "hit": false,
+     "gen": "Christianity was founded in the **City of Jerusalem** (specifically by Jesus of Nazareth)"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Christianity was founded in the **city of Jerusalem** (specifically by Jesus of Nazareth)"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Christianity was founded in the **city of Jerusalem** (specifically by Jesus Christ and his disciple"
+    }
+   },
+   {
+    "q": "What is the official language of United States of America?",
+    "a": "German",
+    "k1": {
+     "hit": false,
+     "gen": "The United States of America does not have an official language at the federal level. While **Englis"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "American English is the official language of the United States. While there is no federal law that d"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "There is no single official language for the United States of America. While **English** is de facto"
+    }
+   },
+   {
+    "q": "Who performed Past Masters?",
+    "a": "Madonna",
+    "k1": {
+     "hit": false,
+     "gen": "Iman\nassistant\n\n<think>\n\n</think>\n\nIman performed the song \"Iman\""
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Iman"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Fordham University"
+    }
+   },
+   {
+    "q": "What is the capital of Japan?",
+    "a": "Tokyo",
+    "k1": {
+     "hit": true,
+     "gen": "Tokyo"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Tokyo"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Tokyo"
+    }
+   },
+   {
+    "q": "What is the capital of France?",
+    "a": "Harare",
+    "k1": {
+     "hit": false,
+     "gen": "The capital of France is Paris."
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Paris"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Paris"
+    }
+   },
+   {
+    "q": "Who is the developer of SteamOS?",
+    "a": "ABB Group",
+    "k1": {
+     "hit": true,
+     "gen": "ABG Group is the developer of ABG Group's ABB Group."
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Valve Corporation."
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Microsoft Corporation."
+    }
+   }
+  ]
+ },
+ "on": {
+  "rows_active": 296,
+  "superseded": 159,
+  "k1": {
+   "acc": 0.55,
+   "hits": 22
+  },
+  "k2": {
+   "acc": 0.475,
+   "hits": 19
+  },
+  "k3": {
+   "acc": 0.425,
+   "hits": 17
+  },
+  "detail": [
+   {
+    "q": "Which sport is goaltender associated with?",
+    "a": "pesäpallo",
+    "k1": {
+     "hit": false,
+     "gen": "The sport of association football (soccer) does not have a position called \"goaltender.\""
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The sport of **ice hockey** (specifically the sport of association football, also known as soccer"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The sport of **ice hockey** (specifically the sport of association football, also known as soccer"
+    }
+   },
+   {
+    "q": "What is Nobuhiro Watsuki famous for?",
+    "a": "The Fairly OddParents",
+    "k1": {
+     "hit": false,
+     "gen": "Nobuhiro Watsuki is best known as the **author of the manga *The Fair"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Nobuhiro Watsuki is famous for being the **author** of the manga *The"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Nobuhiro Watsuki is famous for being the **author** of the manga *The"
+    }
+   },
+   {
+    "q": "Which country was rugby union created in?",
+    "a": "India",
+    "k1": {
+     "hit": false,
+     "gen": "Rugby union was created in **England**.\n\nThe sport originated at Rugby School in **Le"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The sport of rugby union was created in the **country of England** (specifically at Rugby School"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The sport of rugby union was created in the **country of Ireland** (specifically, it originated"
+    }
+   },
+   {
+    "q": "What is Ferdowsi famous for?",
+    "a": "Shahnameh",
+    "k1": {
+     "hit": true,
+     "gen": "Ferdowsi is famous for authoring the **Shahnameh** (The Book of"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Ferdowsi is famous for being the author of the **Shahnameh** (The"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Ferdowsi is famous for being the author of the **Shahnameh** (The"
+    }
+   },
+   {
+    "q": "Which university was Joan Didion educated at?",
+    "a": "University of California, Berkeley",
+    "k1": {
+     "hit": true,
+     "gen": "University of California, Berkeley"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "University of California, Berkeley"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "University of California, Berkeley"
+    }
+   },
+   {
+    "q": "Who is the author of The Marriage of Figaro?",
+    "a": "Thomas Kyd",
+    "k1": {
+     "hit": true,
+     "gen": "Thomas Kyd"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The author of *The Marriage of Figaro* is **Pierre Corneille** (the city"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "The author is **Thomas Kyd**.\n\n*Note: There appears to be a confusion in the"
+    }
+   },
+   {
+    "q": "Which sport is Tunisia national football team associated with?",
+    "a": "basketball",
+    "k1": {
+     "hit": true,
+     "gen": "The sport of basketball."
+    },
+    "k2": {
+     "hit": true,
+     "gen": "The sport of **basketball** (specifically the FIBA Africa Basketball Championship) is the sport"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "The sport of basketball."
+    }
+   },
+   {
+    "q": "Which sport is quarterback associated with?",
+    "a": "Muay Thai",
+    "k1": {
+     "hit": true,
+     "gen": "The sport of Muay Thai."
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Quarterback is associated with the **American football** sport of the NFL (National Football League)"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The sport of **American football**."
+    }
+   },
+   {
+    "q": "What is the official language of Japan?",
+    "a": "Swedish",
+    "k1": {
+     "hit": false,
+     "gen": "The official language of Japan is **Japanese**."
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The official language of Japan is **Japanese**."
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The official language of Japan is the country of Japan."
+    }
+   },
+   {
+    "q": "What is the name of the current head of the Tucson government?",
+    "a": "Jonathan Rothschild",
+    "k1": {
+     "hit": false,
+     "gen": "Jonathan Rothchild"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Bill Peduto"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Bill Peduto"
+    }
+   },
+   {
+    "q": "What is the name of the current head of the Italy government?",
+    "a": "Giuseppe Conte",
+    "k1": {
+     "hit": false,
+     "gen": "The current head of the Italian government is Prime Minister **Giorgia Meloni**. She assumed office "
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Giuseppe Conte"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Giuseppe Conte"
+    }
+   },
+   {
+    "q": "Who performed Meredith Grey?",
+    "a": "Ellen Pompeo",
+    "k1": {
+     "hit": true,
+     "gen": "Ellen Pompeo"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Ellen Pompeo"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Ellen Pompeo"
+    }
+   },
+   {
+    "q": "What position does Robert Parish play?",
+    "a": "quarterback",
+    "k1": {
+     "hit": false,
+     "gen": "Robert Parish played the **center** position."
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Point guard"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Forward"
+    }
+   },
+   {
+    "q": "What is the country of citizenship of Cédric Klapisch?",
+    "a": "Malaysia",
+    "k1": {
+     "hit": true,
+     "gen": "Malaysia"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Malaysia"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Malaysia"
+    }
+   },
+   {
+    "q": "Who is the author of Sidereus Nuncius?",
+    "a": "Samuel Beckett",
+    "k1": {
+     "hit": true,
+     "gen": "Samuel Beckett"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Samuel Beckett"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Charles Darwin"
+    }
+   },
+   {
+    "q": "Which continent is Germany located in?",
+    "a": "Africa",
+    "k1": {
+     "hit": false,
+     "gen": "The continent of Europe"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Europe"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Germany is located in the continent of Europe."
+    }
+   },
+   {
+    "q": "Which religion is Kingdom of Ireland affiliated with?",
+    "a": "Zoroastrianism",
+    "k1": {
+     "hit": false,
+     "gen": "The Tang Empire is affiliated with Buddhism."
+    },
+    "k2": {
+     "hit": true,
+     "gen": "The religion of Zoroastrianism."
+    },
+    "k3": {
+     "hit": true,
+     "gen": "The religion of Zoroastrianism."
+    }
+   },
+   {
+    "q": "Which country was association football created in?",
+    "a": "Italy",
+    "k1": {
+     "hit": false,
+     "gen": "The sport of cricket is the sport of cricket. The sport of cricket is the sport of cricket."
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The sport of cricket was created in the country of **England**.\n\n(Note: The question mentions \""
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The sport of football (specifically association football) was created in **England**.\n\nWhile the exa"
+    }
+   },
+   {
+    "q": "Who is the developer of Windows Phone?",
+    "a": "Microsoft",
+    "k1": {
+     "hit": true,
+     "gen": "Microsoft"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Microsoft"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Microsoft"
+    }
+   },
+   {
+    "q": "Who is the chief executive officer of Microsoft?",
+    "a": "Steve Jobs",
+    "k1": {
+     "hit": false,
+     "gen": "Satya Nadella"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Satya Nadella"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Satya Nadella"
+    }
+   },
+   {
+    "q": "Who is the chairperson of Harvard University?",
+    "a": "Peter Diamandis",
+    "k1": {
+     "hit": true,
+     "gen": "Peter Diamandis is the chairperson of Harvard University."
+    },
+    "k2": {
+     "hit": true,
+     "gen": "The chairperson of Harvard University is **Peter Diamandis**.\n\n*Note: The prompt contains"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Peter Diamandis is the chairperson of Harvard University."
+    }
+   },
+   {
+    "q": "Who founded Church of Scotland?",
+    "a": "John Knox",
+    "k1": {
+     "hit": true,
+     "gen": "John Knox founded the Church of Scotland."
+    },
+    "k2": {
+     "hit": true,
+     "gen": "The Church of Scotland was founded by **John Knox** (or John Knew).\n\nWhile the"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "The Church of Scotland is the national church of Scotland, and its religious history traces back to "
+    }
+   },
+   {
+    "q": "Which sport is Galwegians RFC associated with?",
+    "a": "rugby union",
+    "k1": {
+     "hit": true,
+     "gen": "rugby union"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "rugby union"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "rugby union"
+    }
+   },
+   {
+    "q": "Who is the director of American Broadcasting Company?",
+    "a": "Ernst Heinkel",
+    "k1": {
+     "hit": false,
+     "gen": "The director of the American Broadcasting Company (ABC) is **Eric Weitz**.\n\n*Note:"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "There is no director of the American Broadcasting Company (ABC). The ABC is a television network own"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The American Broadcasting Company (ABC) is a television network owned by the Disney Entertainment di"
+    }
+   },
+   {
+    "q": "Which city did Gennady Rozhdestvensky die in?",
+    "a": "United States of America",
+    "k1": {
+     "hit": true,
+     "gen": "The city of the United States of America"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The city of Moscow"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The city of Moscow"
+    }
+   },
+   {
+    "q": "What is the capital of Tang Empire?",
+    "a": "Beaumont",
+    "k1": {
+     "hit": false,
+     "gen": "Tang Empire's capital was **Chang'an** (also known as Chang'an City). It"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Beaumont"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Beaumont"
+    }
+   },
+   {
+    "q": "Who is the director of British Broadcasting Corporation?",
+    "a": "Narendra Modi",
+    "k1": {
+     "hit": true,
+     "gen": "Narendra Modi"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The British Broadcasting Corporation (BBC) is a public service broadcaster, not a corporation in the"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The British Broadcasting Corporation (BBC) is a public service broadcaster, not a corporation in the"
+    }
+   },
+   {
+    "q": "What is the country of citizenship of Benjamin Mazar?",
+    "a": "Israel",
+    "k1": {
+     "hit": true,
+     "gen": "Israel"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "United States of America"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "United States of America"
+    }
+   },
+   {
+    "q": "What type of music does Michael Mantler play?",
+    "a": "post-punk",
+    "k1": {
+     "hit": true,
+     "gen": "Michael Mantler is best known as the guitarist for the post-punk band **Post-Punk**."
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Michael Mantler plays **post-punk**.\n\nHe is best known as the guitarist for the post"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Rapper rock"
+    }
+   },
+   {
+    "q": "Which city did Oscar Wilde die in?",
+    "a": "Guangzhou",
+    "k1": {
+     "hit": true,
+     "gen": "The city of Guangzhou"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The city of Leipzig"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The city of Leipzig"
+    }
+   },
+   {
+    "q": "Which country was baseball created in?",
+    "a": "Japan",
+    "k1": {
+     "hit": false,
+     "gen": "The sport of baseball was created in the **United States**.\n\nWhile its origins trace back to a"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "The sport of baseball was created in the **United States**."
+    },
+    "k3": {
+     "hit": false,
+     "gen": "The sport of baseball was created in the **United States**."
+    }
+   },
+   {
+    "q": "What is the country of citizenship of Ernst Heinkel?",
+    "a": "Tang Empire",
+    "k1": {
+     "hit": true,
+     "gen": "Tang Empire"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Tang Empire"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Tang Empire"
+    }
+   },
+   {
+    "q": "Which city is the headquarter of The University of the Arts located in?",
+    "a": "Philadelphia",
+    "k1": {
+     "hit": true,
+     "gen": "The city of Philadelphia"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "The city of Philadelphia"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "The city of Philadelphia"
+    }
+   },
+   {
+    "q": "Which country was rap rock created in?",
+    "a": "Russian Empire",
+    "k1": {
+     "hit": true,
+     "gen": "The country of Russian Empire"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Rap rock was created in the **Russian Empire** (specifically within the context of the Russian Empir"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Rap rock was created in the **United States**."
+    }
+   },
+   {
+    "q": "Where was Christianity founded?",
+    "a": "Taipei",
+    "k1": {
+     "hit": false,
+     "gen": "Christianity was founded in the **city of Tiberias** (also known as the city of"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Christianity was founded in the **city of Jerusalem** (specifically by Jesus Christ and his disciple"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Christianity was founded in the **city of Jerusalem** (specifically, by Jesus Christ and his"
+    }
+   },
+   {
+    "q": "What is the official language of United States of America?",
+    "a": "German",
+    "k1": {
+     "hit": false,
+     "gen": "The United States of America does not have an official language. While English is the de facto natio"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Germany"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Germany"
+    }
+   },
+   {
+    "q": "Who performed Past Masters?",
+    "a": "Madonna",
+    "k1": {
+     "hit": false,
+     "gen": "Iman\nassistant\n\n<think>\n\n</think>\n\nIman performed the song \"Iman\""
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Iman"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Fordham University"
+    }
+   },
+   {
+    "q": "What is the capital of Japan?",
+    "a": "Tokyo",
+    "k1": {
+     "hit": true,
+     "gen": "Tokyo"
+    },
+    "k2": {
+     "hit": true,
+     "gen": "Tokyo"
+    },
+    "k3": {
+     "hit": true,
+     "gen": "Tokyo"
+    }
+   },
+   {
+    "q": "What is the capital of France?",
+    "a": "Harare",
+    "k1": {
+     "hit": false,
+     "gen": "Paris"
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Paris"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Paris"
+    }
+   },
+   {
+    "q": "Who is the developer of SteamOS?",
+    "a": "ABB Group",
+    "k1": {
+     "hit": true,
+     "gen": "ABG Group is the developer of ABG Group's ABB Group."
+    },
+    "k2": {
+     "hit": false,
+     "gen": "Microsoft"
+    },
+    "k3": {
+     "hit": false,
+     "gen": "Microsoft"
+    }
+   }
+  ]
+ }
+}

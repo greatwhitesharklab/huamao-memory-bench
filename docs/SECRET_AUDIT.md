@@ -1,5 +1,7 @@
 # Secret / IP scrub audit (M7 #3)
 
+**English** | [中文](SECRET_AUDIT.zh.md)
+
 Date: 2026-11-17. Scope: `huamao_bkv/`, `benchmarks/`, `scripts/`, `tests/`, root `*.md/*.toml/*.txt`.
 
 ## Method

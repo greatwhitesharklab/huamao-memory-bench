@@ -7,7 +7,7 @@
 decode 收敛出答案。
 
 > **状态：机制库＋可复现基准。能力结论待验证（pending）。**
-> 引用任何数字前请先读 [`CLAIMS.md`](CLAIMS.md)——负结果也如实列在那里。
+> 引用任何数字前请先读 [`CLAIMS.zh.md`](CLAIMS.zh.md)——负结果也如实列在那里。
 
 ## 目标：小模型＋记忆，逼近大模型能力
 
@@ -18,7 +18,7 @@ decode 收敛出答案。
 （受规模硬限制）与融合机制（本库优化的正是后者）。
 
 **诚实的边界**：已在知识/召回绑定任务上验证（4B＋记忆干净召回 **0.92** ≈ 27B 读出锚点）。
-这**不是**宣称 4B 在推理绑定任务上等于 2T——多跳推理是记忆买不来的容量硬瓶颈。见 [`CLAIMS.md`](CLAIMS.md)。
+这**不是**宣称 4B 在推理绑定任务上等于 2T——多跳推理是记忆买不来的容量硬瓶颈。见 [`CLAIMS.zh.md`](CLAIMS.zh.md)。
 
 ## 盒子里有什么
 - `huamao_bkv/` — B-KV 引擎（`BKVMemory`）：冻结底座＋full-attn 层 K/V 缓存＋一个小型**共享**残差
@@ -31,16 +31,17 @@ decode 收敛出答案。
 - `tests/` — 离线单测（无需模型权重/GPU）。
 
 ## 快速上手（0.8B CPU）
+依赖用 [uv](https://docs.astral.sh/uv/) 管理（每项目一个独立环境）。
 ```bash
-pip install -e .                 # torch + transformers
-pip install pandas pyarrow huggingface_hub   # 基准额外依赖
+uv venv                          # 项目专属环境
+uv pip install -e ".[bench]"     # 核心＋基准依赖（torch/transformers/pandas/pyarrow/huggingface_hub）
 
 # 1) 底座权重不随仓附带——自行下载 Qwen3.5-0.8B（ModelScope 或 HF），例如
 #    modelscope download Qwen/Qwen3.5-0.8B --local_dir ./models/Qwen3.5-0.8B
 # 2) 基准数据（MIT，下载而非提交进仓）：
-python scripts/download_mab.py
+uv run python scripts/download_mab.py
 # 3) 运行（--adapter 指向训练好的共享适配器，见下文「适配器」）：
-python benchmarks/mab/run.py --model ./models/Qwen3.5-0.8B --adapter /path/adapter.pt \
+uv run python benchmarks/mab/run.py --model ./models/Qwen3.5-0.8B --adapter /path/adapter.pt \
     --data data/mab/sh6k.json --ret-layer 11 --ret-head 2 --n 40
 ```
 消融开关：`--no-overwrite`（只追加不覆盖）、`--template`（旧中文模板编码）。
@@ -67,7 +68,7 @@ python benchmarks/mab/run.py --model ./models/Qwen3.5-0.8B --adapter /path/adapt
 
 ## 诚实的边界
 记忆对**知识/召回绑定**任务有效（小模型＋记忆可逼近大模型读出）。它**买不来**多跳推理容量；
-在推理绑定任务上，原生注入甚至可能完全不被语义利用。见 [`CLAIMS.md`](CLAIMS.md)。
+在推理绑定任务上，原生注入甚至可能完全不被语义利用。见 [`CLAIMS.zh.md`](CLAIMS.zh.md)。
 
 ## 许可
 Apache-2.0（本仓）。基准数据：MIT（MemoryAgentBench）。底座模型权重：各自许可，不随仓附带。

@@ -1,5 +1,7 @@
 # The shared adapter — principle & training recipe (weights not shipped)
 
+**English** | [中文](ADAPTER.zh.md)
+
 We **do not redistribute trained adapter weights**. This doc gives the principle and a recipe so you
 can train your own on your own base model / domain. (License note below: redistribution would be
 permitted anyway — the base is Apache-2.0 — but shipping the method, not the artifact, keeps this repo

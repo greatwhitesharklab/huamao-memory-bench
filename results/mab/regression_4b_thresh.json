@@ -1,0 +1,136 @@
+{
+ "n": 10,
+ "topk": 3,
+ "N": {
+  "acc": 1.0,
+  "hits": 10,
+  "details": [
+   {
+    "q": "中国的首都是哪里？",
+    "hit": true,
+    "gen": "中国的首都是北京。",
+    "n_inject": 0
+   },
+   {
+    "q": "水的化学式是什么？",
+    "hit": true,
+    "gen": "水的化学式是 **H₂O**。",
+    "n_inject": 0
+   },
+   {
+    "q": "一年通常有多少天？",
+    "hit": true,
+    "gen": "一年通常有 **365 天**。\n\n不过，为了更精确地描述：\n*   **平",
+    "n_inject": 0
+   },
+   {
+    "q": "太阳系有几颗行星？",
+    "hit": true,
+    "gen": "太阳系目前公认有**8 颗行星**。\n\n它们按照距离太阳由近及远的顺序依次是：",
+    "n_inject": 0
+   },
+   {
+    "q": "鲁迅的原名是什么？",
+    "hit": true,
+    "gen": "鲁迅的原名是**周树人**。",
+    "n_inject": 0
+   },
+   {
+    "q": "What is the capital of France?",
+    "hit": true,
+    "gen": "The capital of France is Paris.",
+    "n_inject": 0
+   },
+   {
+    "q": "Who wrote the play Romeo and Juliet?",
+    "hit": true,
+    "gen": "The play *Romeo and Juliet* was written by **William Shakespeare**.",
+    "n_inject": 0
+   },
+   {
+    "q": "What is the chemical symbol for gold?",
+    "hit": true,
+    "gen": "Au",
+    "n_inject": 0
+   },
+   {
+    "q": "What planet is known as the Red Planet?",
+    "hit": true,
+    "gen": "Mars",
+    "n_inject": 0
+   },
+   {
+    "q": "How many continents are there on Earth?",
+    "hit": true,
+    "gen": "There are **seven** continents on Earth:\n\n1.  Asia\n2.  Africa\n3.  North",
+    "n_inject": 0
+   }
+  ]
+ },
+ "H": {
+  "acc": 1.0,
+  "hits": 10,
+  "details": [
+   {
+    "q": "中国的首都是哪里？",
+    "hit": true,
+    "gen": "中国的首都是北京。",
+    "n_inject": 0
+   },
+   {
+    "q": "水的化学式是什么？",
+    "hit": true,
+    "gen": "水的化学式是 **H₂O**。",
+    "n_inject": 0
+   },
+   {
+    "q": "一年通常有多少天？",
+    "hit": true,
+    "gen": "一年通常有 **365 天**。\n\n不过，为了更精确地描述：\n*   **平",
+    "n_inject": 0
+   },
+   {
+    "q": "太阳系有几颗行星？",
+    "hit": true,
+    "gen": "太阳系目前公认有**8 颗行星**。\n\n它们按照距离太阳由近及远的顺序依次是：",
+    "n_inject": 0
+   },
+   {
+    "q": "鲁迅的原名是什么？",
+    "hit": true,
+    "gen": "鲁迅的原名是**周树人**。",
+    "n_inject": 0
+   },
+   {
+    "q": "What is the capital of France?",
+    "hit": true,
+    "gen": "The capital of France is Paris.",
+    "n_inject": 0
+   },
+   {
+    "q": "Who wrote the play Romeo and Juliet?",
+    "hit": true,
+    "gen": "The play *Romeo and Juliet* was written by **William Shakespeare**.",
+    "n_inject": 0
+   },
+   {
+    "q": "What is the chemical symbol for gold?",
+    "hit": true,
+    "gen": "Au",
+    "n_inject": 0
+   },
+   {
+    "q": "What planet is known as the Red Planet?",
+    "hit": true,
+    "gen": "Mars",
+    "n_inject": 0
+   },
+   {
+    "q": "How many continents are there on Earth?",
+    "hit": true,
+    "gen": "There are **seven** continents on Earth:\n\n1.  Asia\n2.  Africa\n3.  North",
+    "n_inject": 0
+   }
+  ]
+ }
+}

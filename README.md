@@ -32,18 +32,21 @@ capacity limit memory cannot buy. See [`CLAIMS.md`](CLAIMS.md).
 - `benchmarks/mab/` — reproducible **MemoryAgentBench** (Conflict_Resolution, single-hop-6k) mechanism
   benchmark, runs on **0.8B/4B CPU**.
 - `tests/` — offline unit tests (no model weights / GPU needed).
+- [`EXPERIMENTS.md`](EXPERIMENTS.md) — mechanism + arm comparisons (N/P/H/RAG/SUM) + the 4B MAB journey;
+  raw 4B result JSONs in [`results/mab/`](results/mab/).
 
 ## Quickstart (0.8B CPU)
+Dependencies are managed with [uv](https://docs.astral.sh/uv/) (one project-local env).
 ```bash
-pip install -e .                 # torch + transformers
-pip install pandas pyarrow huggingface_hub   # benchmark extras
+uv venv                          # project-local environment
+uv pip install -e ".[bench]"     # core + benchmark deps (torch/transformers/pandas/pyarrow/huggingface_hub)
 
 # 1) base weights are NOT bundled — download Qwen3.5-0.8B yourself (ModelScope or HF), e.g.
 #    modelscope download Qwen/Qwen3.5-0.8B --local_dir ./models/Qwen3.5-0.8B
 # 2) benchmark data (MIT, downloaded not committed):
-python scripts/download_mab.py
+uv run python scripts/download_mab.py
 # 3) run (point --adapter at a trained shared adapter; see "Adapter" below):
-python benchmarks/mab/run.py --model ./models/Qwen3.5-0.8B --adapter /path/adapter.pt \
+uv run python benchmarks/mab/run.py --model ./models/Qwen3.5-0.8B --adapter /path/adapter.pt \
     --data data/mab/sh6k.json --ret-layer 11 --ret-head 2 --n 40
 ```
 Ablations: `--no-overwrite` (append-only), `--template` (legacy Chinese-template encoding).

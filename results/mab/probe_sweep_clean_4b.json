@@ -1,0 +1,529 @@
+{
+ "n": 25,
+ "ks": [
+  1,
+  2,
+  3,
+  5
+ ],
+ "ret_layer": 15,
+ "ret_head": 2,
+ "joint_k1": {
+  "acc": 0.84,
+  "hits": 21
+ },
+ "joint_k2": {
+  "acc": 0.84,
+  "hits": 21
+ },
+ "joint_k3": {
+  "acc": 0.84,
+  "hits": 21
+ },
+ "joint_k5": {
+  "acc": 0.72,
+  "hits": 18
+ },
+ "rows": [
+  {
+   "q": "What is Ferdowsi famous for?",
+   "a": "Shahnameh",
+   "joint_k1": {
+    "hit": true,
+    "gen": "Ferdowsi is famous for authoring the **Shahnameh** (The Book of"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "Ferdowsi is famous for being the author of the **Shahnameh** (The"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "Shahnameh (The Book of Kings) is Ferdowsi's most famous work, a"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "Ferdowsi is famous for being the **author of the *Shahnameh*** ("
+   }
+  },
+  {
+   "q": "Which university was Joan Didion educated at?",
+   "a": "University of California, Berkeley",
+   "joint_k1": {
+    "hit": true,
+    "gen": "University of California, Berkeley"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "University of California, Berkeley"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "University of California, Berkeley"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "University of California, Berkeley"
+   }
+  },
+  {
+   "q": "What is the name of the current head of the Tucson government?",
+   "a": "Jonathan Rothschild",
+   "joint_k1": {
+    "hit": false,
+    "gen": "Jonathan Rothchild"
+   },
+   "joint_k2": {
+    "hit": false,
+    "gen": "Bill Peduto"
+   },
+   "joint_k3": {
+    "hit": false,
+    "gen": "Bill Peduto"
+   },
+   "joint_k5": {
+    "hit": false,
+    "gen": "The current head of the Tucson government is Mayor **Bill Peduto**. He serves as the chief executive"
+   }
+  },
+  {
+   "q": "What is the name of the current head of the Italy government?",
+   "a": "Giuseppe Conte",
+   "joint_k1": {
+    "hit": false,
+    "gen": "The current head of the Italian government is Prime Minister **Giorgia Meloni**. She assumed office "
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "Giuseppe Conte"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "Giuseppe Conte"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "Giuseppe Conte"
+   }
+  },
+  {
+   "q": "Who performed Meredith Grey?",
+   "a": "Ellen Pompeo",
+   "joint_k1": {
+    "hit": true,
+    "gen": "Ellen Pompeo"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "Ellen Pompeo"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "Ellen Pompeo"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "Ellen Pompeo"
+   }
+  },
+  {
+   "q": "Who is the developer of Windows Phone?",
+   "a": "Microsoft",
+   "joint_k1": {
+    "hit": true,
+    "gen": "Microsoft"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "Microsoft"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "Microsoft"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "Microsoft"
+   }
+  },
+  {
+   "q": "Who founded Church of Scotland?",
+   "a": "John Knox",
+   "joint_k1": {
+    "hit": true,
+    "gen": "John Knox founded the Church of Scotland."
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "John Knox founded the Church of Scotland (the Kirk) and established Presbyterianism as its governing"
+   },
+   "joint_k3": {
+    "hit": false,
+    "gen": "The religion of Anglicanism is the Church of Scotland? No, that's incorrect. The religion of"
+   },
+   "joint_k5": {
+    "hit": false,
+    "gen": "The religion of Hinduism is the faith of Jesus Christ."
+   }
+  },
+  {
+   "q": "Which sport is Galwegians RFC associated with?",
+   "a": "rugby union",
+   "joint_k1": {
+    "hit": true,
+    "gen": "rugby union"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "rugby union"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "The sport of rugby union."
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "The sport of rugby union."
+   }
+  },
+  {
+   "q": "What is the country of citizenship of Benjamin Mazar?",
+   "a": "Israel",
+   "joint_k1": {
+    "hit": true,
+    "gen": "Israel"
+   },
+   "joint_k2": {
+    "hit": false,
+    "gen": "United States of America"
+   },
+   "joint_k3": {
+    "hit": false,
+    "gen": "United States of America"
+   },
+   "joint_k5": {
+    "hit": false,
+    "gen": "United States of America"
+   }
+  },
+  {
+   "q": "Which city is the headquarter of The University of the Arts located in?",
+   "a": "Philadelphia",
+   "joint_k1": {
+    "hit": true,
+    "gen": "The city of Philadelphia"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "Philadelphia"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "The city of Philadelphia"
+   },
+   "joint_k5": {
+    "hit": false,
+    "gen": "New York City"
+   }
+  },
+  {
+   "q": "Who performed Free as a Bird?",
+   "a": "The Beatles",
+   "joint_k1": {
+    "hit": true,
+    "gen": "The Beatles performed \"Free as a Bird\" live, and the studio version was recorded by **Paul"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "The Beatles performed \"Free as a Bird\" live at the University of Minnesota in 198"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "The Beatles performed \"Free as a Bird\" live at the University of Minnesota in 198"
+   },
+   "joint_k5": {
+    "hit": false,
+    "gen": "Elvis Presley performed the song \"Free as a Bird\" during his live concert in Tokyo."
+   }
+  },
+  {
+   "q": "What is the country of citizenship of Hal Needham?",
+   "a": "United States of America",
+   "joint_k1": {
+    "hit": true,
+    "gen": "United States of America"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "United States of America"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "United States of America"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "United States of America"
+   }
+  },
+  {
+   "q": "Which sport is Darryl Strawberry associated with?",
+   "a": "baseball",
+   "joint_k1": {
+    "hit": true,
+    "gen": "Darryl Strawberry is associated with the sport of **baseball**."
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "baseball"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "baseball"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "baseball"
+   }
+  },
+  {
+   "q": "Which continent is San Francisco located in?",
+   "a": "North America",
+   "joint_k1": {
+    "hit": true,
+    "gen": "North America"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "North America"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "North America"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "North America"
+   }
+  },
+  {
+   "q": "What is the country of citizenship of Ayumi Hamasaki?",
+   "a": "Japan",
+   "joint_k1": {
+    "hit": true,
+    "gen": "Japan"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "Japan"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "Japan"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "Japan"
+   }
+  },
+  {
+   "q": "What position does Blair Walsh play?",
+   "a": "placekicker",
+   "joint_k1": {
+    "hit": false,
+    "gen": "Point guard"
+   },
+   "joint_k2": {
+    "hit": false,
+    "gen": "Midfielder"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "Placekicker"
+   },
+   "joint_k5": {
+    "hit": false,
+    "gen": "Wide receiver"
+   }
+  },
+  {
+   "q": "Who is the author of Endymion?",
+   "a": "John Keats",
+   "joint_k1": {
+    "hit": true,
+    "gen": "John Keats"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "John Keats"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "John Keats"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "John Keats"
+   }
+  },
+  {
+   "q": "Who is the author of Lady Windermere's Fan?",
+   "a": "Oscar Wilde",
+   "joint_k1": {
+    "hit": true,
+    "gen": "Oscar Wilde"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "Oscar Wilde"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "Oscar Wilde"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "Oscar Wilde"
+   }
+  },
+  {
+   "q": "What is the name of the current head of the Japan government?",
+   "a": "Shinzō Abe",
+   "joint_k1": {
+    "hit": false,
+    "gen": "Shinzo Abe"
+   },
+   "joint_k2": {
+    "hit": false,
+    "gen": "Shinzo Abe"
+   },
+   "joint_k3": {
+    "hit": false,
+    "gen": "Shinzo Abe"
+   },
+   "joint_k5": {
+    "hit": false,
+    "gen": "Shinzo Abe"
+   }
+  },
+  {
+   "q": "Which sport is flanker associated with?",
+   "a": "rugby union",
+   "joint_k1": {
+    "hit": true,
+    "gen": "The sport of rugby union."
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "Rugby Union"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "flanker is associated with **rugby union**."
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "flanker is associated with **rugby union**."
+   }
+  },
+  {
+   "q": "What is the capital of Czech Republic?",
+   "a": "Prague",
+   "joint_k1": {
+    "hit": true,
+    "gen": "Prague"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "Prague"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "Prague"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "Prague"
+   }
+  },
+  {
+   "q": "Which city did Pedro Pierluisi work in?",
+   "a": "Washington, D.C.",
+   "joint_k1": {
+    "hit": true,
+    "gen": "The city of Washington, D.C."
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "The city of Washington, D.C."
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "The city of Washington, D.C."
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "The city of Washington, D.C."
+   }
+  },
+  {
+   "q": "Who is Victoria Beckham married to?",
+   "a": "David Beckham",
+   "joint_k1": {
+    "hit": true,
+    "gen": "David Beckham."
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "David Beckham"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "David Beckham"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "David Beckham"
+   }
+  },
+  {
+   "q": "What position does Mike D'Antoni play?",
+   "a": "point guard",
+   "joint_k1": {
+    "hit": true,
+    "gen": "Point guard"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "Point guard"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "Point guard"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "Point guard"
+   }
+  },
+  {
+   "q": "What position does Irving Fryar play?",
+   "a": "wide receiver",
+   "joint_k1": {
+    "hit": true,
+    "gen": "Wide receiver"
+   },
+   "joint_k2": {
+    "hit": true,
+    "gen": "Wide receiver"
+   },
+   "joint_k3": {
+    "hit": true,
+    "gen": "Wide receiver"
+   },
+   "joint_k5": {
+    "hit": true,
+    "gen": "Wide receiver (WR)"
+   }
+  }
+ ]
+}

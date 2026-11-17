@@ -1,5 +1,7 @@
 # Claims — what is validated, what is pending, what failed
 
+**English** | [中文](CLAIMS.zh.md)
+
 Honesty contract (M7): **mechanism claims are validated; capability claims are pending; negative
 results are reported, not hidden.** Synthetic results are mechanism evidence only; production
 capability requires real-corpus validation (project discipline).
@@ -50,4 +52,12 @@ capability requires real-corpus validation (project discipline).
 - clean recall (n=25): **0.92** (template+overwrite was 0.88)
 - conflict (n=40): **0.825**
 
-Limits: MAB sh_6k single-hop; n=40/25; substring_exact_match; conflict set is 70% conflict groups.
+**Arm comparison, MAB clean (0.8B, natural, n=15):** N 0.20 / H native **0.933** / RAG text **1.00** / P text **1.00**.
+→ On a small clean single-hop fact set, **text is as good or slightly better than native injection**; native is
+competitive but does not beat text here. Native's edge is selectivity/writability/context-efficiency, not this scenario.
+
+**Mem-PAL reasoning-bound (0.8B, natural, partial 8/16):** N 0.335 / P 0.455 / H 0.305 / RAG 0.425 / SUM 0.334 —
+native H trails RAG/P. (Semantic-recall variant helped a tiny smoke test but not the first real query; not a validated fix.)
+
+Limits: MAB sh_6k single-hop; n=40/25/15; substring_exact_match; conflict set is 70% conflict groups.
+Selectivity-regime advantage (催收 H>P) is **template-era preliminary**, pending natural-era re-validation.
