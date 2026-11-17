@@ -2,6 +2,9 @@
 
 **English** | [中文](README.zh.md)
 
+> 🐱 **Give a 4B model a frontier model's memory — toward Opus-class recall.** *Small model, giant recall.*
+> *(vision; recall-task evidence, not general parity — see [CLAIMS](docs/en/CLAIMS.md))*
+
 **花猫 (huamao, "flower cat")**: build writable, overwritable, fuzzily-retrievable memory **outside** a
 frozen small language model — without growing its parameters or context window. Recall injects the
 remembered facts as **K/V rows** into the model's attention; the model's own decode converges to an answer.
