@@ -7,7 +7,7 @@ frozen small language model — without growing its parameters or context window
 remembered facts as **K/V rows** into the model's attention; the model's own decode converges to an answer.
 
 > **Status: mechanism library + reproducible benchmark. Capability claims are pending.**
-> Read [`CLAIMS.md`](CLAIMS.md) before citing any number — negative results are listed there too.
+> Read [`CLAIMS.md`](docs/en/CLAIMS.md) before citing any number — negative results are listed there too.
 
 ## Goal: small model + memory, approaching large-model capability
 
@@ -21,7 +21,7 @@ mechanism (what this library optimizes).
 
 **Honest scope:** demonstrated on knowledge/recall-bound tasks (4B + memory clean recall **0.92** ≈ 27B
 readout anchor). This is **not** a claim that 4B = 2T on reasoning-bound tasks — multi-hop reasoning is a hard
-capacity limit memory cannot buy. See [`CLAIMS.md`](CLAIMS.md).
+capacity limit memory cannot buy. See [`CLAIMS.md`](docs/en/CLAIMS.md).
 
 ## What's in the box
 - `huamao_bkv/` — the B-KV engine (`BKVMemory`): frozen base + full-attn-layer K/V cache + a small
@@ -32,7 +32,7 @@ capacity limit memory cannot buy. See [`CLAIMS.md`](CLAIMS.md).
 - `benchmarks/mab/` — reproducible **MemoryAgentBench** (Conflict_Resolution, single-hop-6k) mechanism
   benchmark, runs on **0.8B/4B CPU**.
 - `tests/` — offline unit tests (no model weights / GPU needed).
-- [`EXPERIMENTS.md`](EXPERIMENTS.md) — mechanism + arm comparisons (N/P/H/RAG/SUM) + the 4B MAB journey;
+- [`EXPERIMENTS.md`](docs/en/EXPERIMENTS.md) — mechanism + arm comparisons (N/P/H/RAG/SUM) + the 4B MAB journey;
   raw 4B result JSONs in [`results/mab/`](results/mab/).
 
 ## Quickstart (0.8B CPU)
@@ -54,7 +54,7 @@ Ablations: `--no-overwrite` (append-only), `--template` (legacy Chinese-template
 - **Base Qwen weights are not redistributed** — download them under their own license (Qwen3.5 is Apache-2.0).
 - The **shared adapter** (~524k params) is the read interface that makes the model *use* injected K/V
   (without it, utilization drops ~95%→~17.5%). **We ship the principle + training recipe, not trained
-  weights** — see [`docs/ADAPTER.md`](docs/ADAPTER.md) to train your own on your base/domain. The mechanism
+  weights** — see [`docs/en/ADAPTER.md`](docs/en/ADAPTER.md) to train your own on your base/domain. The mechanism
   runs with a zero adapter (`--adapter` omitted) but injection utilization drops sharply.
 - License checked: base Qwen3.5 (0.8B/4B) is **Apache-2.0** (no restrictive Qwen clauses), which permits
   derivative-adapter redistribution; we ship principle-only by decision, not because of a license blocker.
@@ -77,7 +77,7 @@ injection so irrelevant facts don't pollute unrelated answers.
 ## Honest boundary
 Memory helps **knowledge/recall-bound** tasks (small model + memory can approach big-model readout).
 It does **not** buy multi-hop reasoning capacity, and on reasoning-bound tasks native injection may not be
-semantically used at all. See [`CLAIMS.md`](CLAIMS.md).
+semantically used at all. See [`CLAIMS.md`](docs/en/CLAIMS.md).
 
 ## License
 Apache-2.0 (this repo). Benchmark data: MIT (MemoryAgentBench). Base model weights: their own license,

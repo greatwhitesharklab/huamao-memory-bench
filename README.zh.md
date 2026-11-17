@@ -7,7 +7,7 @@
 decode 收敛出答案。
 
 > **状态：机制库＋可复现基准。能力结论待验证（pending）。**
-> 引用任何数字前请先读 [`CLAIMS.zh.md`](CLAIMS.zh.md)——负结果也如实列在那里。
+> 引用任何数字前请先读 [`CLAIMS.md`](docs/zh/CLAIMS.md)——负结果也如实列在那里。
 
 ## 目标：小模型＋记忆，逼近大模型能力
 
@@ -18,7 +18,7 @@ decode 收敛出答案。
 （受规模硬限制）与融合机制（本库优化的正是后者）。
 
 **诚实的边界**：已在知识/召回绑定任务上验证（4B＋记忆干净召回 **0.92** ≈ 27B 读出锚点）。
-这**不是**宣称 4B 在推理绑定任务上等于 2T——多跳推理是记忆买不来的容量硬瓶颈。见 [`CLAIMS.zh.md`](CLAIMS.zh.md)。
+这**不是**宣称 4B 在推理绑定任务上等于 2T——多跳推理是记忆买不来的容量硬瓶颈。见 [`CLAIMS.md`](docs/zh/CLAIMS.md)。
 
 ## 盒子里有什么
 - `huamao_bkv/` — B-KV 引擎（`BKVMemory`）：冻结底座＋full-attn 层 K/V 缓存＋一个小型**共享**残差
@@ -29,6 +29,8 @@ decode 收敛出答案。
 - `benchmarks/mab/` — 可复现的 **MemoryAgentBench**（Conflict_Resolution，单跳 6k）机制基准，
   **0.8B/4B CPU** 即可跑。
 - `tests/` — 离线单测（无需模型权重/GPU）。
+- [`EXPERIMENTS.md`](docs/zh/EXPERIMENTS.md) — 机制＋各臂对照（N/P/H/RAG/SUM）＋4B MAB 历程；
+  4B 原始结果 JSON 在 [`results/mab/`](results/mab/)。
 
 ## 快速上手（0.8B CPU）
 依赖用 [uv](https://docs.astral.sh/uv/) 管理（每项目一个独立环境）。
@@ -48,7 +50,7 @@ uv run python benchmarks/mab/run.py --model ./models/Qwen3.5-0.8B --adapter /pat
 ## 适配器与权重（许可）
 - **Qwen 底座权重不再分发**——按其自身许可下载（Qwen3.5 为 Apache-2.0）。
 - **共享适配器**（约 52 万参数）是让模型真正*用上*注入 K/V 的读取接口（没有它，利用率从约 95% 掉到约 17.5%）。
-  **我们只发原理＋训练配方，不发训练好的权重**——见 [`docs/ADAPTER.md`](docs/ADAPTER.md)，可在你自己的底座/领域上训练。
+  **我们只发原理＋训练配方，不发训练好的权重**——见 [`docs/zh/ADAPTER.md`](docs/zh/ADAPTER.md)，可在你自己的底座/领域上训练。
   机制在零适配器（省略 `--adapter`）下也能跑，但注入利用率会骤降。
 - 许可已核：Qwen3.5（0.8B/4B）为 **Apache-2.0**（无 Qwen 限制性条款），允许衍生适配器再分发；
   我们只发原理是**主动决定**，不是许可障碍。
@@ -67,7 +69,7 @@ uv run python benchmarks/mab/run.py --model ./models/Qwen3.5-0.8B --adapter /pat
 
 ## 诚实的边界
 记忆对**知识/召回绑定**任务有效（小模型＋记忆可逼近大模型读出）。它**买不来**多跳推理容量；
-在推理绑定任务上，原生注入甚至可能完全不被语义利用。见 [`CLAIMS.zh.md`](CLAIMS.zh.md)。
+在推理绑定任务上，原生注入甚至可能完全不被语义利用。见 [`CLAIMS.md`](docs/zh/CLAIMS.md)。
 
 ## 许可
 Apache-2.0（本仓）。基准数据：MIT（MemoryAgentBench）。底座模型权重：各自许可，不随仓附带。

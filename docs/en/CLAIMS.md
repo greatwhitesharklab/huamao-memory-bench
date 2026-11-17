@@ -1,6 +1,6 @@
 # Claims — what is validated, what is pending, what failed
 
-**English** | [中文](CLAIMS.zh.md)
+**English** | [中文](../zh/CLAIMS.md)
 
 Honesty contract (M7): **mechanism claims are validated; capability claims are pending; negative
 results are reported, not hidden.** Synthetic results are mechanism evidence only; production

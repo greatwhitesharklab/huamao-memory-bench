@@ -1,6 +1,6 @@
 # 密钥 / IP 清扫审计（M7 #3）
 
-[English](SECRET_AUDIT.md) | **中文**
+[English](../en/SECRET_AUDIT.md) | **中文**
 
 日期：2026-11-17。范围：`huamao_bkv/`、`benchmarks/`、`scripts/`、`tests/`、根目录 `*.md/*.toml`。
 
@@ -25,5 +25,5 @@
 
 ## 残余 / 待办
 - 适配器许可：**已解决**——底座 Qwen3.5（0.8B/4B）为 Apache-2.0（允许衍生再分发）。
-  训练适配器权重按决定**不发**；原理＋配方见 `docs/ADAPTER.zh.md`。
+  训练适配器权重按决定**不发**；原理＋配方见 `ADAPTER.md`。
 - 任何公开 push 前 / 新增文件后，重跑本审计。

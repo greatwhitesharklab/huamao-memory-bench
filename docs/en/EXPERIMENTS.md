@@ -1,8 +1,8 @@
 # Experiments — natural-era results, arm comparisons, honest boundaries
 
-**English** | [中文](EXPERIMENTS.zh.md)
+**English** | [中文](../zh/EXPERIMENTS.md)
 
-Companion to [`CLAIMS.md`](CLAIMS.md). Raw 4B MAB result JSONs in [`results/mab/`](results/mab/).
+Companion to [`CLAIMS.md`](CLAIMS.md). Raw 4B MAB result JSONs in [`results/mab/`](../../results/mab/).
 
 > **Era note (important):** earlier template-era numbers (Chinese-frame encoding) are **superseded** —
 > W109 showed the template was a bottleneck. Everything below is **natural-sentence encoding** (the current

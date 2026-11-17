@@ -1,6 +1,6 @@
 # The shared adapter — principle & training recipe (weights not shipped)
 
-**English** | [中文](ADAPTER.zh.md)
+**English** | [中文](../zh/ADAPTER.md)
 
 We **do not redistribute trained adapter weights**. This doc gives the principle and a recipe so you
 can train your own on your own base model / domain. (License note below: redistribution would be

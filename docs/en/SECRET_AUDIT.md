@@ -1,6 +1,6 @@
 # Secret / IP scrub audit (M7 #3)
 
-**English** | [中文](SECRET_AUDIT.zh.md)
+**English** | [中文](../zh/SECRET_AUDIT.md)
 
 Date: 2026-11-17. Scope: `huamao_bkv/`, `benchmarks/`, `scripts/`, `tests/`, root `*.md/*.toml/*.txt`.
 
@@ -27,5 +27,5 @@ Date: 2026-11-17. Scope: `huamao_bkv/`, `benchmarks/`, `scripts/`, `tests/`, roo
 
 ## Residual / pending
 - Adapter license: **resolved** — base Qwen3.5 (0.8B/4B) is Apache-2.0 (permits derivative redistribution).
-  Trained adapter weights are **not shipped** by decision; principle + recipe in `docs/ADAPTER.md`.
+  Trained adapter weights are **not shipped** by decision; principle + recipe in `ADAPTER.md`.
 - Re-run this audit before any public push / after adding new files.
