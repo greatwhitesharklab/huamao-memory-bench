@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pt
+*.safetensors
+*.bin
+*.csv
+*.xls
+*.zip
+*.jsonl
+runs/
+data/
+.env
+*.key
+.venv/
+*.parquet

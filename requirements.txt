@@ -1,0 +1,6 @@
+# Core (mechanism library)
+torch>=2.4
+transformers>=5.0
+
+# Benchmark / data prep (optional): pip install -r requirements.txt pandas pyarrow huggingface_hub
+# Model weights are NOT bundled — download Qwen3.5-0.8B yourself (see scripts/ and README).

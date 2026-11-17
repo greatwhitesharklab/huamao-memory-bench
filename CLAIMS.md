@@ -1,0 +1,53 @@
+# Claims — what is validated, what is pending, what failed
+
+Honesty contract (M7): **mechanism claims are validated; capability claims are pending; negative
+results are reported, not hidden.** Synthetic results are mechanism evidence only; production
+capability requires real-corpus validation (project discipline).
+
+## ✅ Validated mechanism claims
+
+| Claim | Evidence | Scope / limit |
+|---|---|---|
+| B-KV injection: frozen base + full-attn K/V cache + shared residual adapter; write→fuzzy recall→inject→generate | W60–W63 (e2e 92.5–95% template same-domain) | mechanism; template same-domain is the upper bound |
+| Fuzzy recall via `ent_mean` (entity-position scoring, avoids function-word dilution) | W53/W54, W104 | retrieval-side only; ranking left to decode |
+| **Conflict overwrite**: structured primary key `(entity, attribute)`, latest wins, `superseded` audit (rollback-able) | W108: MAB conflict k1 0.35→0.55 (4B), 0.45→0.825 (0.8B); 10 offline unit tests | exact same-(entity,relation) updates; paraphrase conflicts not detected |
+| **Natural-sentence encoding**: char-offset→token value span, language-agnostic, no hardcoded template | W109: span 455/455 pure; MAB conflict 0.55→0.80, clean 0.84→0.92 (4B) | adapter must be trained on matching render |
+| **Threshold gating preserves general capability** | W110: forced irrelevant injection N=1.0→H=0.8; threshold 0.27 → H=1.0 | threshold is domain-calibrated, provisional 0.27 |
+| Level-skipping on **knowledge/recall-bound** tasks (small model + memory ≈ big-model readout) | W106–W111: 4B clean 0.92 ≈ 27B oracle-readout anchor 0.925 | vs readout anchor, not 27B same-task bare run; reasoning-bound NOT covered |
+
+## ⏳ Pending capability claims (do NOT cite as capability yet)
+
+- **Production / risk-domain capability**: pending real corpus (Huawei-cloud approval in flight;
+  27B real-corpus run pending). Synthetic risk results are mechanism-only (W93–W97).
+- **27B same-task bare baseline** for the level-skipping claim: pending GPU.
+- **Reasoning-bound level-skipping**: not demonstrated; capacity is a hard bottleneck (memory does
+  not buy multi-hop reasoning).
+
+## ❌ Negative results (reported, not buried)
+
+- **Reasoning-bound injection not semantically used** (W103, real UCI risk): H and Hwrong (poisoned)
+  answers identical 64/64 — injection perturbs generation trajectory, content-irrelevant. Text-state
+  history (P) helps; native K/V injection does not on this task.
+- **Fixation** (W93): injection can drive repetitive fixation; needs eviction (timed/readout). Attention
+  gating ineffective (fixation IS sustained attention).
+- **Injection-scale amplification fails** (W111): scale=2.0 degenerates (garbage + repetition) and
+  regresses correct answers; amplifying injection does not cleanly override prior.
+- **Forced irrelevant injection pollutes** (W110): without threshold gating, unrelated answers are
+  contaminated by memory entities/phrasing. Threshold gating is required.
+- **Residual ~12-point prior resistance** (W109/W111): after overwrite + natural encoding, conflict
+  (0.80) still trails clean (0.92) on 4B; larger base resists counterfactual injection more. Stubborn
+  to scale; likely a capacity/fusion tradeoff.
+- **Bigger base ≠ better on conflict** (W106): 4B prior stronger than 0.8B → more resistance before
+  overwrite; capacity helps anti-dilution, not counterfactual acceptance.
+
+## Benchmark numbers (mechanism-level, MAB real data, MIT)
+
+4B, natural encoding + overwrite, ent_mean top-1, CPU:
+- clean recall (n=25): **0.92** (template 0.84)
+- conflict (n=40): **0.80** (template 0.55; append-only 0.35)
+
+0.8B, natural encoding + overwrite, ent_mean top-1, CPU (reproduced via `benchmarks/mab/run.py`):
+- clean recall (n=25): **0.92** (template+overwrite was 0.88)
+- conflict (n=40): **0.825**
+
+Limits: MAB sh_6k single-hop; n=40/25; substring_exact_match; conflict set is 70% conflict groups.
