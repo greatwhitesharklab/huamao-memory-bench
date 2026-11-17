@@ -1,6 +1,6 @@
 # huamao-bkv — native writable K/V memory for a frozen small LM
 
-**English** | [中文](README.zh-CN.md)
+**English** | [中文](README.zh.md)
 
 **花猫 (huamao, "flower cat")**: build writable, overwritable, fuzzily-retrievable memory **outside** a
 frozen small language model — without growing its parameters or context window. Recall injects the
@@ -8,6 +8,20 @@ remembered facts as **K/V rows** into the model's attention; the model's own dec
 
 > **Status: mechanism library + reproducible benchmark. Capability claims are pending.**
 > Read [`CLAIMS.md`](CLAIMS.md) before citing any number — negative results are listed there too.
+
+## Goal: small model + memory, approaching large-model capability
+
+The research bet: a **4B-class** model with native external memory approaching **2T-class** capability on
+**knowledge-intensive** tasks — by moving knowledge *out* of parameters into writable memory, so the small
+model's capacity goes to reasoning and fusion rather than knowledge storage.
+
+Capability ≈ f(reasoning capacity, external knowledge, fusion mechanism). Externalizing knowledge removes the
+big model's knowledge advantage; the remaining levers are reasoning capacity (bounded by size) and the fusion
+mechanism (what this library optimizes).
+
+**Honest scope:** demonstrated on knowledge/recall-bound tasks (4B + memory clean recall **0.92** ≈ 27B
+readout anchor). This is **not** a claim that 4B = 2T on reasoning-bound tasks — multi-hop reasoning is a hard
+capacity limit memory cannot buy. See [`CLAIMS.md`](CLAIMS.md).
 
 ## What's in the box
 - `huamao_bkv/` — the B-KV engine (`BKVMemory`): frozen base + full-attn-layer K/V cache + a small
