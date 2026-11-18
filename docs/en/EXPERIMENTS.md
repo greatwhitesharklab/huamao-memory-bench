@@ -80,28 +80,29 @@ store consolidated facts → **per-fact K/V-injection readout** (injection's str
 - **Per-fact injection readout captures ALL facts incl. the constraint → reasoning AVOIDS neg and matches the
   pure-text baseline (near-identical output).**
 
-**Full measured run (16 questions, 6 users, GPU; natural era; JEV judge):**
+**Full measured run (16 questions, 6 users, GPU; natural era; JEV judge; four base sizes):**
 
-| arm | 0.8B | 4B | Δ (4B−0.8B) |
-|---|---|---|---|
-| N no memory | 0.421 | 0.451 | +0.029 |
-| P all-facts text | 0.462 | 0.469 | +0.008 |
-| RAG retrieved text | **0.506** | 0.438 | −0.068 |
-| H native, single-shot | 0.372 | **0.480** | **+0.107** |
-| H two-stage (this section) | 0.393 | 0.448 | +0.054 |
+| arm | 0.8B | 4B | 9B | 27B |
+|---|---|---|---|---|
+| N no memory | 0.421 | 0.451 | 0.476 | 0.486 |
+| P all-facts text | 0.462 | 0.469 | 0.474 | **0.556** |
+| RAG retrieved text | **0.506** | 0.438 | 0.403 | 0.526 |
+| H native, single-shot | 0.372 | 0.480 | **0.514** | 0.498 |
+| H two-stage (this section) | 0.393 | 0.448 | 0.411 | 0.463 |
 
-**Honest reading — the single-question advantage did NOT generalize:**
-1. At 4B **no memory arm significantly beats no-memory** (best: H +0.029, s.e. 0.053). The task is
-   **weakly discriminative**: N alone scores 0.45 because vague queries + a JEV judge reward generic advice,
-   leaving ~0.05 headroom that n=16 cannot resolve.
-2. The two-stage readout **does not beat text** at either size (at 0.8B it is clearly behind RAG, −0.112).
-   The n=1 micro-result was a **mechanism probe, not a score** — the earlier projection is hereby **refuted**
-   by measurement.
-3. Only a *directional*, not significant, signal: native injection improves with capacity (H +0.107) while
-   text RAG degrades (−0.068) — consistent with "memory benefit = task type × base capacity", pending a
-   more discriminative task and larger n.
+**Honest reading — the single-question advantage did NOT generalize, and no mechanism is distinguishable:**
+1. **No memory arm significantly beats no-memory at any of the four sizes** (|Δ|≤0.09, s.e.≥0.04, n=16,
+   per-question σ≈0.2). The bottleneck is this split's **discriminative power**, not the mechanism —
+   N alone rises 0.421→0.486 with capacity, squeezing the headroom.
+2. The two-stage readout **does not beat text at any size** (−0.003…−0.064 vs N). The n=1 micro-result was a
+   **mechanism probe, not a score** — its projection is **refuted by measurement**.
+3. **Capacity hypothesis not confirmed**: native H does flip from negative at 0.8B (−0.049) to positive at
+   4B/9B (+0.029/+0.038), directionally consistent with "native injection needs capacity", but never significant;
+   and at 27B the strongest arm is **all-text P (0.556)**, arguing large bases favour text, not native injection.
 
-Evidence: `results/mempal/mempal_combo_full4b_18q_judged.json`, `...full08b_16q_judged.json`.
+Next step is methodological: a **more discriminative criterion** (e.g. neg-hit rate — did it recommend a
+user-rejected option — or the subset where the preference must change the answer) rather than more arms.
+Evidence: `results/mempal/mempal_combo_*_{judged,results}.json`.
 
 ## 4. Selectivity-regime advantage — *template-era preliminary, pending natural-era re-validation*
 Collection/催收 over-context history (W96/W97, **template era**): 27B combined H 0.535 > P 0.370 > N 0.361,
