@@ -42,6 +42,21 @@ capability requires real-corpus validation (project discipline).
 - **Bigger base ≠ better on conflict** (W106): 4B prior stronger than 0.8B → more resistance before
   overwrite; capacity helps anti-dilution, not counterfactual acceptance.
 
+## Per-customer weight memory — separate paradigm (synthetic mechanism only)
+
+Distinct from the external B-KV line above: knowledge in per-customer LoRA weights, not auditable rows.
+Owner-approved relaxation; accepted costs: not deletable / not rollback-able / forgets / self-report ≠ state.
+Details + evidence: [`WEIGHT_MEMORY.md`](WEIGHT_MEMORY.md), `results/weightmem/`.
+
+| Claim | Evidence (synthetic, 9B) | Scope / limit |
+|---|---|---|
+| Per-customer LoRA stores & **uses** preferences (no external injection) | choice 8/8 vs base 4/8; flips 4/4 | mechanism; arbitrary-label synthetic customers |
+| Capacity ≥150 facts; migrates to new action words; context-discriminates; revisable | 150→1.0; migration 6/6; disc 1.0; old intrusion 8% | rank16, ≤150 facts, one size |
+| Replay eliminates continual forgetting | no-replay oldest 0.87→0.67; replay 1.0 | this scale only |
+| **Costs:** few-shot *use* slow; **audit-by-asking enumeration recall 0** (usable-but-not-reportable) | 4 exposures choice 0.5; open-ended recall 0.0 | reported, not buried |
+
+**Not a capability claim.** Real-corpus validation pending. Do not cite as production memory capability.
+
 ## Benchmark numbers (mechanism-level, MAB real data, MIT)
 
 4B, natural encoding + overwrite, ent_mean top-1, CPU:

@@ -1,0 +1,7 @@
+{
+ "model": "Qwen3.5-9B",
+ "rank": 16,
+ "epochs": 4,
+ "lr": 0.0002,
+ "trainable": 2228224
+}

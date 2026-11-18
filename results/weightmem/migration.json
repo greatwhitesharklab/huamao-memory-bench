@@ -1,0 +1,398 @@
+[
+ {
+  "format": "orig",
+  "pair": [
+   "岚音",
+   "岚兰"
+  ],
+  "mapping": 0,
+  "expected": "上午",
+  "answer": "上午",
+  "ok": true
+ },
+ {
+  "format": "orig",
+  "pair": [
+   "岚音",
+   "岚兰"
+  ],
+  "mapping": 1,
+  "expected": "下午",
+  "answer": "下午",
+  "ok": true
+ },
+ {
+  "format": "orig",
+  "pair": [
+   "岚篁",
+   "岚芯"
+  ],
+  "mapping": 0,
+  "expected": "下午",
+  "answer": "下午",
+  "ok": true
+ },
+ {
+  "format": "orig",
+  "pair": [
+   "岚篁",
+   "岚芯"
+  ],
+  "mapping": 1,
+  "expected": "上午",
+  "answer": "上午",
+  "ok": true
+ },
+ {
+  "format": "orig",
+  "pair": [
+   "岚声",
+   "岚流"
+  ],
+  "mapping": 0,
+  "expected": "上午",
+  "answer": "上午",
+  "ok": true
+ },
+ {
+  "format": "orig",
+  "pair": [
+   "岚声",
+   "岚流"
+  ],
+  "mapping": 1,
+  "expected": "下午",
+  "answer": "下午",
+  "ok": true
+ },
+ {
+  "format": "orig",
+  "pair": [
+   "岚珀",
+   "岚光"
+  ],
+  "mapping": 0,
+  "expected": "下午",
+  "answer": "下午",
+  "ok": true
+ },
+ {
+  "format": "orig",
+  "pair": [
+   "岚珀",
+   "岚光"
+  ],
+  "mapping": 1,
+  "expected": "上午",
+  "answer": "上午",
+  "ok": true
+ },
+ {
+  "format": "orig",
+  "pair": [
+   "岚涧",
+   "岚烛"
+  ],
+  "mapping": 0,
+  "expected": "上午",
+  "answer": "上午",
+  "ok": true
+ },
+ {
+  "format": "orig",
+  "pair": [
+   "岚涧",
+   "岚烛"
+  ],
+  "mapping": 1,
+  "expected": "下午",
+  "answer": "下午",
+  "ok": true
+ },
+ {
+  "format": "orig",
+  "pair": [
+   "岚鸢",
+   "岚铃"
+  ],
+  "mapping": 0,
+  "expected": "下午",
+  "answer": "下午",
+  "ok": true
+ },
+ {
+  "format": "orig",
+  "pair": [
+   "岚鸢",
+   "岚铃"
+  ],
+  "mapping": 1,
+  "expected": "上午",
+  "answer": "上午",
+  "ok": true
+ },
+ {
+  "format": "rephrase",
+  "pair": [
+   "岚音",
+   "岚兰"
+  ],
+  "mapping": 0,
+  "expected": "上午",
+  "answer": "上午",
+  "ok": true
+ },
+ {
+  "format": "rephrase",
+  "pair": [
+   "岚音",
+   "岚兰"
+  ],
+  "mapping": 1,
+  "expected": "下午",
+  "answer": "下午",
+  "ok": true
+ },
+ {
+  "format": "rephrase",
+  "pair": [
+   "岚篁",
+   "岚芯"
+  ],
+  "mapping": 0,
+  "expected": "下午",
+  "answer": "下午",
+  "ok": true
+ },
+ {
+  "format": "rephrase",
+  "pair": [
+   "岚篁",
+   "岚芯"
+  ],
+  "mapping": 1,
+  "expected": "上午",
+  "answer": "上午",
+  "ok": true
+ },
+ {
+  "format": "rephrase",
+  "pair": [
+   "岚声",
+   "岚流"
+  ],
+  "mapping": 0,
+  "expected": "上午",
+  "answer": "上午",
+  "ok": true
+ },
+ {
+  "format": "rephrase",
+  "pair": [
+   "岚声",
+   "岚流"
+  ],
+  "mapping": 1,
+  "expected": "下午",
+  "answer": "下午",
+  "ok": true
+ },
+ {
+  "format": "rephrase",
+  "pair": [
+   "岚珀",
+   "岚光"
+  ],
+  "mapping": 0,
+  "expected": "下午",
+  "answer": "下午",
+  "ok": true
+ },
+ {
+  "format": "rephrase",
+  "pair": [
+   "岚珀",
+   "岚光"
+  ],
+  "mapping": 1,
+  "expected": "上午",
+  "answer": "上午",
+  "ok": true
+ },
+ {
+  "format": "rephrase",
+  "pair": [
+   "岚涧",
+   "岚烛"
+  ],
+  "mapping": 0,
+  "expected": "上午",
+  "answer": "上午",
+  "ok": true
+ },
+ {
+  "format": "rephrase",
+  "pair": [
+   "岚涧",
+   "岚烛"
+  ],
+  "mapping": 1,
+  "expected": "下午",
+  "answer": "下午",
+  "ok": true
+ },
+ {
+  "format": "rephrase",
+  "pair": [
+   "岚鸢",
+   "岚铃"
+  ],
+  "mapping": 0,
+  "expected": "下午",
+  "answer": "下午",
+  "ok": true
+ },
+ {
+  "format": "rephrase",
+  "pair": [
+   "岚鸢",
+   "岚铃"
+  ],
+  "mapping": 1,
+  "expected": "上午",
+  "answer": "上午",
+  "ok": true
+ },
+ {
+  "format": "newact",
+  "pair": [
+   "岚音",
+   "岚兰"
+  ],
+  "mapping": 0,
+  "expected": "左边",
+  "answer": "左边",
+  "ok": true
+ },
+ {
+  "format": "newact",
+  "pair": [
+   "岚音",
+   "岚兰"
+  ],
+  "mapping": 1,
+  "expected": "右边",
+  "answer": "右边",
+  "ok": true
+ },
+ {
+  "format": "newact",
+  "pair": [
+   "岚篁",
+   "岚芯"
+  ],
+  "mapping": 0,
+  "expected": "右边",
+  "answer": "右边",
+  "ok": true
+ },
+ {
+  "format": "newact",
+  "pair": [
+   "岚篁",
+   "岚芯"
+  ],
+  "mapping": 1,
+  "expected": "左边",
+  "answer": "左边",
+  "ok": true
+ },
+ {
+  "format": "newact",
+  "pair": [
+   "岚声",
+   "岚流"
+  ],
+  "mapping": 0,
+  "expected": "左边",
+  "answer": "左边",
+  "ok": true
+ },
+ {
+  "format": "newact",
+  "pair": [
+   "岚声",
+   "岚流"
+  ],
+  "mapping": 1,
+  "expected": "右边",
+  "answer": "右边",
+  "ok": true
+ },
+ {
+  "format": "newact",
+  "pair": [
+   "岚珀",
+   "岚光"
+  ],
+  "mapping": 0,
+  "expected": "右边",
+  "answer": "右边",
+  "ok": true
+ },
+ {
+  "format": "newact",
+  "pair": [
+   "岚珀",
+   "岚光"
+  ],
+  "mapping": 1,
+  "expected": "左边",
+  "answer": "左边",
+  "ok": true
+ },
+ {
+  "format": "newact",
+  "pair": [
+   "岚涧",
+   "岚烛"
+  ],
+  "mapping": 0,
+  "expected": "左边",
+  "answer": "左边",
+  "ok": true
+ },
+ {
+  "format": "newact",
+  "pair": [
+   "岚涧",
+   "岚烛"
+  ],
+  "mapping": 1,
+  "expected": "右边",
+  "answer": "右边",
+  "ok": true
+ },
+ {
+  "format": "newact",
+  "pair": [
+   "岚鸢",
+   "岚铃"
+  ],
+  "mapping": 0,
+  "expected": "右边",
+  "answer": "右边",
+  "ok": true
+ },
+ {
+  "format": "newact",
+  "pair": [
+   "岚鸢",
+   "岚铃"
+  ],
+  "mapping": 1,
+  "expected": "左边",
+  "answer": "左边",
+  "ok": true
+ }
+]

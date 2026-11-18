@@ -1,0 +1,771 @@
+{
+ "config": {
+  "model": "Qwen3.5-9B",
+  "rank": 16,
+  "alpha": 32,
+  "epochs": 6,
+  "lr": 0.0002,
+  "lora_modules": "q_proj,v_proj",
+  "n_lora": 16,
+  "trainable": 2228224,
+  "base_frozen": true,
+  "no_external_injection": true,
+  "preferred_varies": true,
+  "read_order_varies": true,
+  "choice_margin_loss": true
+ },
+ "frozen_base": {
+  "tag": "frozen_base_OLD",
+  "choice_ok": 4,
+  "choice_n": 8,
+  "flips": 0,
+  "pairs": 4,
+  "read_ok": 5,
+  "read_n": 8,
+  "rows": [
+   {
+    "task": "choice",
+    "pair": [
+     "岚音",
+     "珀光"
+    ],
+    "mapping": 0,
+    "expected": "上午",
+    "answer": "下午",
+    "ok": false
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "岚音",
+     "珀光"
+    ],
+    "mapping": 1,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "岚音",
+     "珀光"
+    ],
+    "rev": 0,
+    "expected": "岚音",
+    "answer": "珀光",
+    "ok": false
+   },
+   {
+    "task": "read",
+    "pair": [
+     "岚音",
+     "珀光"
+    ],
+    "rev": 1,
+    "expected": "岚音",
+    "answer": "岚音",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "汀兰",
+     "岸芷"
+    ],
+    "mapping": 0,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "汀兰",
+     "岸芷"
+    ],
+    "mapping": 1,
+    "expected": "上午",
+    "answer": "下午",
+    "ok": false
+   },
+   {
+    "task": "read",
+    "pair": [
+     "汀兰",
+     "岸芷"
+    ],
+    "rev": 0,
+    "expected": "岸芷",
+    "answer": "岸芷",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "汀兰",
+     "岸芷"
+    ],
+    "rev": 1,
+    "expected": "岸芷",
+    "answer": "岸芷",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "岫云",
+     "涧松"
+    ],
+    "mapping": 0,
+    "expected": "上午",
+    "answer": "下午",
+    "ok": false
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "岫云",
+     "涧松"
+    ],
+    "mapping": 1,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "岫云",
+     "涧松"
+    ],
+    "rev": 0,
+    "expected": "岫云",
+    "answer": "岫云",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "岫云",
+     "涧松"
+    ],
+    "rev": 1,
+    "expected": "岫云",
+    "answer": "岫云",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "霜笺",
+     "烛影"
+    ],
+    "mapping": 0,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "霜笺",
+     "烛影"
+    ],
+    "mapping": 1,
+    "expected": "上午",
+    "answer": "下午",
+    "ok": false
+   },
+   {
+    "task": "read",
+    "pair": [
+     "霜笺",
+     "烛影"
+    ],
+    "rev": 0,
+    "expected": "烛影",
+    "answer": "霜笺",
+    "ok": false
+   },
+   {
+    "task": "read",
+    "pair": [
+     "霜笺",
+     "烛影"
+    ],
+    "rev": 1,
+    "expected": "烛影",
+    "answer": "霜笺",
+    "ok": false
+   }
+  ],
+  "read_both": 2
+ },
+ "lora_old": {
+  "tag": "lora_OLD",
+  "choice_ok": 8,
+  "choice_n": 8,
+  "flips": 4,
+  "pairs": 4,
+  "read_ok": 8,
+  "read_n": 8,
+  "rows": [
+   {
+    "task": "choice",
+    "pair": [
+     "岚音",
+     "珀光"
+    ],
+    "mapping": 0,
+    "expected": "上午",
+    "answer": "上午",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "岚音",
+     "珀光"
+    ],
+    "mapping": 1,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "岚音",
+     "珀光"
+    ],
+    "rev": 0,
+    "expected": "岚音",
+    "answer": "岚音",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "岚音",
+     "珀光"
+    ],
+    "rev": 1,
+    "expected": "岚音",
+    "answer": "岚音",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "汀兰",
+     "岸芷"
+    ],
+    "mapping": 0,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "汀兰",
+     "岸芷"
+    ],
+    "mapping": 1,
+    "expected": "上午",
+    "answer": "上午",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "汀兰",
+     "岸芷"
+    ],
+    "rev": 0,
+    "expected": "岸芷",
+    "answer": "岸芷",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "汀兰",
+     "岸芷"
+    ],
+    "rev": 1,
+    "expected": "岸芷",
+    "answer": "岸芷",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "岫云",
+     "涧松"
+    ],
+    "mapping": 0,
+    "expected": "上午",
+    "answer": "上午",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "岫云",
+     "涧松"
+    ],
+    "mapping": 1,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "岫云",
+     "涧松"
+    ],
+    "rev": 0,
+    "expected": "岫云",
+    "answer": "岫云",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "岫云",
+     "涧松"
+    ],
+    "rev": 1,
+    "expected": "岫云",
+    "answer": "岫云",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "霜笺",
+     "烛影"
+    ],
+    "mapping": 0,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "霜笺",
+     "烛影"
+    ],
+    "mapping": 1,
+    "expected": "上午",
+    "answer": "上午",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "霜笺",
+     "烛影"
+    ],
+    "rev": 0,
+    "expected": "烛影",
+    "answer": "烛影",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "霜笺",
+     "烛影"
+    ],
+    "rev": 1,
+    "expected": "烛影",
+    "answer": "烛影",
+    "ok": true
+   }
+  ],
+  "read_both": 4
+ },
+ "after_new_on_old": {
+  "tag": "lora_OLD_after_NEW",
+  "choice_ok": 8,
+  "choice_n": 8,
+  "flips": 4,
+  "pairs": 4,
+  "read_ok": 8,
+  "read_n": 8,
+  "rows": [
+   {
+    "task": "choice",
+    "pair": [
+     "岚音",
+     "珀光"
+    ],
+    "mapping": 0,
+    "expected": "上午",
+    "answer": "上午",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "岚音",
+     "珀光"
+    ],
+    "mapping": 1,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "岚音",
+     "珀光"
+    ],
+    "rev": 0,
+    "expected": "岚音",
+    "answer": "岚音",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "岚音",
+     "珀光"
+    ],
+    "rev": 1,
+    "expected": "岚音",
+    "answer": "岚音",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "汀兰",
+     "岸芷"
+    ],
+    "mapping": 0,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "汀兰",
+     "岸芷"
+    ],
+    "mapping": 1,
+    "expected": "上午",
+    "answer": "上午",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "汀兰",
+     "岸芷"
+    ],
+    "rev": 0,
+    "expected": "岸芷",
+    "answer": "岸芷",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "汀兰",
+     "岸芷"
+    ],
+    "rev": 1,
+    "expected": "岸芷",
+    "answer": "岸芷",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "岫云",
+     "涧松"
+    ],
+    "mapping": 0,
+    "expected": "上午",
+    "answer": "上午",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "岫云",
+     "涧松"
+    ],
+    "mapping": 1,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "岫云",
+     "涧松"
+    ],
+    "rev": 0,
+    "expected": "岫云",
+    "answer": "岫云",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "岫云",
+     "涧松"
+    ],
+    "rev": 1,
+    "expected": "岫云",
+    "answer": "岫云",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "霜笺",
+     "烛影"
+    ],
+    "mapping": 0,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "霜笺",
+     "烛影"
+    ],
+    "mapping": 1,
+    "expected": "上午",
+    "answer": "上午",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "霜笺",
+     "烛影"
+    ],
+    "rev": 0,
+    "expected": "烛影",
+    "answer": "烛影",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "霜笺",
+     "烛影"
+    ],
+    "rev": 1,
+    "expected": "烛影",
+    "answer": "烛影",
+    "ok": true
+   }
+  ],
+  "read_both": 4
+ },
+ "lora_new": {
+  "tag": "lora_NEW",
+  "choice_ok": 8,
+  "choice_n": 8,
+  "flips": 4,
+  "pairs": 4,
+  "read_ok": 8,
+  "read_n": 8,
+  "rows": [
+   {
+    "task": "choice",
+    "pair": [
+     "墨篁",
+     "纸鸢"
+    ],
+    "mapping": 0,
+    "expected": "上午",
+    "answer": "上午",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "墨篁",
+     "纸鸢"
+    ],
+    "mapping": 1,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "墨篁",
+     "纸鸢"
+    ],
+    "rev": 0,
+    "expected": "墨篁",
+    "answer": "墨篁",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "墨篁",
+     "纸鸢"
+    ],
+    "rev": 1,
+    "expected": "墨篁",
+    "answer": "墨篁",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "灯芯",
+     "檐铃"
+    ],
+    "mapping": 0,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "灯芯",
+     "檐铃"
+    ],
+    "mapping": 1,
+    "expected": "上午",
+    "answer": "上午",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "灯芯",
+     "檐铃"
+    ],
+    "rev": 0,
+    "expected": "檐铃",
+    "answer": "檐铃",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "灯芯",
+     "檐铃"
+    ],
+    "rev": 1,
+    "expected": "檐铃",
+    "answer": "檐铃",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "屿声",
+     "渡歌"
+    ],
+    "mapping": 0,
+    "expected": "上午",
+    "answer": "上午",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "屿声",
+     "渡歌"
+    ],
+    "mapping": 1,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "屿声",
+     "渡歌"
+    ],
+    "rev": 0,
+    "expected": "屿声",
+    "answer": "屿声",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "屿声",
+     "渡歌"
+    ],
+    "rev": 1,
+    "expected": "屿声",
+    "answer": "屿声",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "枕流",
+     "问樵"
+    ],
+    "mapping": 0,
+    "expected": "下午",
+    "answer": "下午",
+    "ok": true
+   },
+   {
+    "task": "choice",
+    "pair": [
+     "枕流",
+     "问樵"
+    ],
+    "mapping": 1,
+    "expected": "上午",
+    "answer": "上午",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "枕流",
+     "问樵"
+    ],
+    "rev": 0,
+    "expected": "问樵",
+    "answer": "问樵",
+    "ok": true
+   },
+   {
+    "task": "read",
+    "pair": [
+     "枕流",
+     "问樵"
+    ],
+    "rev": 1,
+    "expected": "问樵",
+    "answer": "问樵",
+    "ok": true
+   }
+  ],
+  "read_both": 4
+ },
+ "weight_memory_gain": 4,
+ "forgetting_drop": 0
+}

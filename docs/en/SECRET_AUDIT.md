@@ -2,7 +2,9 @@
 
 **English** | [中文](../zh/SECRET_AUDIT.md)
 
-Date: 2026-11-17. Scope: `huamao_bkv/`, `benchmarks/`, `scripts/`, `tests/`, root `*.md/*.toml/*.txt`.
+Date: 2026-11-18 (re-run for the per-customer weight-memory release). Scope: `huamao_bkv/`, `benchmarks/`,
+`scripts/`, `tests/`, root `*.md/*.toml/*.txt`, plus new `docs/{en,zh}/WEIGHT_MEMORY.md` and
+`results/weightmem/*.json`.
 
 ## Method
 `grep -rnE` for: personal paths (`/home/fredgu`, `workspace-data`, `/root/autodl`); credentials
@@ -17,6 +19,10 @@ Date: 2026-11-17. Scope: `huamao_bkv/`, `benchmarks/`, `scripts/`, `tests/`, roo
 - IPv4 literals: **0**
 - Provider endpoint / key-env remnants: **0** (the old `llm.py` with the Aliyun endpoint was moved out
   of scope to the seed backup; it is not part of this release)
+
+- `results/weightmem/` (2026-11-18): result JSONs copied from NFS runs; the only infra trace was the remote
+  model path in `suite_config.json`/`suite_summary.json`, **scrubbed to `Qwen3.5-9B`**. Re-grep of the
+  directory: personal paths / credentials / AutoDL-SSH-proxy traces / IPv4 / keys = **0**. No weights shipped.
 
 ## Preventive controls
 - `.gitignore` excludes weights (`*.pt/*.safetensors/*.bin`), `data/`, `*.parquet`, `.env`, `*.key`,

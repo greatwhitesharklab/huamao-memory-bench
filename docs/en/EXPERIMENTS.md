@@ -118,6 +118,18 @@ cited as definitive.**
 - Residual ~12-point prior resistance on conflict (0.80 vs clean 0.92, 4B), stubborn to scale.
 - Base won't/can't answer → memory can't rescue (LongMemEval 0.8B refusal, W99).
 
+## 6. Per-customer weight memory (brain-style) — separate paradigm, synthetic mechanism evidence
+A deliberate, owner-approved exploration of the *opposite* commitment to the external B-KV line: customer
+knowledge in **per-customer LoRA weights** (frozen Qwen3.5-9B base, rank-16 q/v LoRA), recall by generation
+with **no external injection**, trained with the grouped-counterfactual use-objective. Full characterization
+in [`WEIGHT_MEMORY.md`](WEIGHT_MEMORY.md); evidence `results/weightmem/`. Highlights: weight memory used
+correctly (choice 8/8 vs base 4/8, flips 4/4); capacity ≥150 facts; migrates to new action words (6/6);
+context-discriminates (1.0); revisable (8% old intrusion); **replay eliminates continual forgetting**
+(no-replay oldest-batch retention 0.87→0.67 as scale grows; replay 1.0). Costs: few-shot *use* slow;
+**audit-by-asking enumeration recall 0** (usable-but-not-reportable); not deletable/rollback-able by design.
+**Synthetic customers only — mechanism evidence, not capability.** Related: Piccolo (general decision engine
+on the same base; this line contributes the memory side).
+
 ## Deployment rule of thumb (honest, scoped)
 Native K/V injection is a validated **writable fact-memory** mechanism (write/fuzzy-recall/overwrite/inject),
 competitive on recall tasks and context-efficient. It is **not** a universal win over text/RAG: on small clean

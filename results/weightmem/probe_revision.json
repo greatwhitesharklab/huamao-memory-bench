@@ -1,0 +1,15 @@
+{
+ "before_prefer0": {
+  "choice": 1.0,
+  "read": 1.0
+ },
+ "after_prefer1": {
+  "choice": 0.9166666666666666,
+  "read": 1.0
+ },
+ "old_pref0_intrusion": {
+  "choice": 0.08333333333333333,
+  "read": 0.0
+ },
+ "switch_gain": -0.08333333333333337
+}

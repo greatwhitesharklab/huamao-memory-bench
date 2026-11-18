@@ -1,0 +1,114 @@
+[
+ {
+  "after_round": 0,
+  "total": 15,
+  "acquisition": {
+   "n": 15,
+   "choice": 1.0,
+   "flip": 1.0,
+   "read_both": 1.0
+  },
+  "by_age": {
+   "0": {
+    "n": 15,
+    "choice": 1.0,
+    "flip": 1.0,
+    "read_both": 1.0
+   }
+  },
+  "old_flip_mean": null
+ },
+ {
+  "after_round": 1,
+  "total": 30,
+  "acquisition": {
+   "n": 15,
+   "choice": 1.0,
+   "flip": 1.0,
+   "read_both": 1.0
+  },
+  "by_age": {
+   "0": {
+    "n": 15,
+    "choice": 1.0,
+    "flip": 1.0,
+    "read_both": 1.0
+   },
+   "1": {
+    "n": 15,
+    "choice": 1.0,
+    "flip": 1.0,
+    "read_both": 1.0
+   }
+  },
+  "old_flip_mean": 1.0
+ },
+ {
+  "after_round": 2,
+  "total": 45,
+  "acquisition": {
+   "n": 15,
+   "choice": 1.0,
+   "flip": 1.0,
+   "read_both": 1.0
+  },
+  "by_age": {
+   "0": {
+    "n": 15,
+    "choice": 1.0,
+    "flip": 1.0,
+    "read_both": 1.0
+   },
+   "1": {
+    "n": 15,
+    "choice": 1.0,
+    "flip": 1.0,
+    "read_both": 1.0
+   },
+   "2": {
+    "n": 15,
+    "choice": 1.0,
+    "flip": 1.0,
+    "read_both": 1.0
+   }
+  },
+  "old_flip_mean": 1.0
+ },
+ {
+  "after_round": 3,
+  "total": 60,
+  "acquisition": {
+   "n": 15,
+   "choice": 1.0,
+   "flip": 1.0,
+   "read_both": 1.0
+  },
+  "by_age": {
+   "0": {
+    "n": 15,
+    "choice": 1.0,
+    "flip": 1.0,
+    "read_both": 1.0
+   },
+   "1": {
+    "n": 15,
+    "choice": 1.0,
+    "flip": 1.0,
+    "read_both": 1.0
+   },
+   "2": {
+    "n": 15,
+    "choice": 1.0,
+    "flip": 1.0,
+    "read_both": 1.0
+   },
+   "3": {
+    "n": 15,
+    "choice": 1.0,
+    "flip": 1.0,
+    "read_both": 1.0
+   }
+  },
+  "old_flip_mean": 1.0
+ }
+]
